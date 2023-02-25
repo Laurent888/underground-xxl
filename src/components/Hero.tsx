@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import HeroImage from "../public/hero.jpg";
+import HeroImage from "../public/hero.png";
 
 function Hero() {
   return (
-    <div className="h-full w-full">
+    <div style={{ height: "700px" }} className=" w-full">
       <Image
         src={HeroImage}
-        style={{ objectFit: "cover" }}
+        style={{ objectFit: "fill" }}
         className="h-full w-full"
       />
     </div>

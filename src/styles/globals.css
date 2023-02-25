@@ -109,3 +109,77 @@ a {
     color-scheme: dark;
   }
 }
+
+.scrollArtistsOrigin{
+  transform: translateX(0px);
+  transition: transform 300ms ease-in-out;
+}
+
+.scrollArtistsRight {
+  transform: translateX(-500px);
+  transition: transform 300ms ease-in-out;
+}
+
+.scrollArtistsMaxRight {
+  transform: translateX(-1000px);
+  transition: transform 300ms ease-in-out;
+}
+
+.artistCardContainer{
+  transform: scale(1);
+  transition: transform 150ms linear;
+}
+
+.artistCardContainer:hover{
+  cursor: pointer;
+  opacity: 0.70;
+  transform: scale(.98);
+  transition: transform 150ms linear, opacity 150ms;
+}
+
+.artistCard {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  transform: scale(1);
+  opacity: 0.8;
+  transition: transform 150ms linear;
+}
+
+.roundButton { 
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #ed6911;
+}
+
+.roundButton:hover { 
+  opacity: 0.8;
+  transition: opacity 150ms linear;
+}
+
+@media (max-width: 500px) {
+  .artistCard {
+    width: 360px;
+    height: 400px;
+    overflow: hidden;
+    transform: scale(1);
+    opacity: 0.8;
+    transition: transform 150ms linear;
+  }
+
+  .scrollArtistsOrigin{
+    transform: translateX(0px);
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .scrollArtistsRight {
+    transform: translateX(-380px);
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .scrollArtistsMaxRight {
+    transform: translateX(-760px);
+    transition: transform 300ms ease-in-out;
+  }
+}
