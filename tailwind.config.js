@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Montserrat"],
+      },
       spacing: {
         128: "32rem",
         200: "44rem",

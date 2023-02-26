@@ -9,6 +9,7 @@ function Hero() {
         src={HeroImage}
         style={{ objectFit: "fill" }}
         className="h-full w-full"
+        alt="hero"
       />
     </div>
   );
