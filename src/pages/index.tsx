@@ -37,7 +37,7 @@ export default function Home() {
         <Hero />
 
         {/* SECTION INFO */}
-        <div className="container mx-auto md:h-200 flex flex-col-reverse md:flex-row">
+        <div className="container mt-12 mx-auto md:h-200 flex flex-col-reverse md:flex-row">
           <div className="w-full px-8 md:px-0 md:w-1/2 lg:w-[40%] bg-inherit">
             <Image
               src={EventFlyer}

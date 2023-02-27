@@ -25,14 +25,16 @@ function Navbar() {
           </Link>
 
           <ul className="hidden md:flex flex-row items-center invisible md:visible">
-            <li className="text-white font-semibold hover:cursor-pointer py-6 md:py-8 px-6 hover:bg-orange-600 transition duration-250">
-              Agenda
-            </li>
-            <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
-              <Link href={TICKETING_URL} target="_blank">
+            <Link href="/agenda">
+              <li className="text-white font-semibold hover:cursor-pointer py-6 md:py-8 px-6 hover:bg-orange-600 transition duration-250">
+                Agenda
+              </li>
+            </Link>
+            <Link href={TICKETING_URL} target="_blank">
+              <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
                 Tickets
-              </Link>
-            </li>
+              </li>
+            </Link>
             <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
               Contacts
             </li>

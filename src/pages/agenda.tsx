@@ -3,8 +3,9 @@ import Link from "next/link";
 
 export default function Agenda() {
   return (
-    <div className="pt-16 bg-black">
-      <section className="container mx-auto flex flex-col items-center">
+    <div className="bg-black">
+      <div className="h-[56px] md:h-[86px]" />
+      <section className="container mt-12 mx-auto flex flex-col items-center">
         <SectionTitle text="Agenda" />
 
         <p className="mb-12 text-center mx-2">
