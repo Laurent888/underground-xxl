@@ -3,13 +3,6 @@ import React from "react";
 function Hero() {
   return (
     <div className="h-128 md:h-200 w-full relative">
-      {/* <video
-        src={require("../assets/heroVideo.mp4")}
-        autoPlay
-        loop
-        muted
-        className="video opacity-40"
-      /> */}
       <video autoPlay loop muted className="video opacity-40">
         <source src="/heroVideo.mp4" type="video/mp4" />
       </video>
