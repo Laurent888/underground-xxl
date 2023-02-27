@@ -15,6 +15,7 @@ function ArtistCard({ source, alt, name }: ArtistCardProsp) {
           src={source}
           alt={alt}
           style={{ objectFit: "cover", objectPosition: "center" }}
+          loading="eager"
         />
       </div>
       <p className="absolute bottom-4 left-4 font-bold text-gray-50 text-xl uppercase">

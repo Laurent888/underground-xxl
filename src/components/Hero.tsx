@@ -1,9 +1,10 @@
 import React from "react";
+import { isIOS } from "react-device-detect";
 
 function Hero() {
   return (
     <div className="h-128 md:h-200 w-full relative">
-      <video autoPlay loop muted className="video opacity-40">
+      <video autoPlay loop muted playsInline className="video opacity-40">
         <source src="/heroVideo.mp4" type="video/mp4" />
       </video>
       <div className="absolute top-12 left-8 md:bottom-1/3 md:left-32">

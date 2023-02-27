@@ -35,9 +35,11 @@ function Navbar() {
                 Tickets
               </li>
             </Link>
-            <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
-              Contacts
-            </li>
+            <Link href="/contact">
+              <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
+                Contacts
+              </li>
+            </Link>
           </ul>
         </div>
       </div>
