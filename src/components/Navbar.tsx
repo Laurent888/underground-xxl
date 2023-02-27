@@ -1,22 +1,39 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
+import Logo from "../public/underground_logo.png";
+import { TICKETING_URL } from "@/utils/constants";
 
 function Navbar() {
   return (
     <nav className="fixed w-full bg-black z-50">
-      <div className="container mx-auto">
-        <div className="flex flex-row items-center justify-between">
-          <h3 className="text-white py-8 container font-extrabold italic md:ml-0 ml-4">
-            <Link href="/">UNDERGROUND XXL</Link>
-          </h3>
-          <ul className="flex flex-row items-center invisible md:visible">
-            <li className="text-white font-semibold hover:cursor-pointer py-8 px-6 hover:bg-orange-600 transition duration-250">
+      <div className="md:container md:mx-auto px-2">
+        <div className="flex flex-row items-center justify-center md:justify-between">
+          <Link href="/" className="justify-center items-center">
+            <div className="w-32 py-2 md:w-44">
+              <Image
+                src={Logo}
+                alt="logo"
+                style={{
+                  objectFit: "contain",
+                  width: "100%",
+                  height: "100%",
+                }}
+                loading="eager"
+              />
+            </div>
+          </Link>
+
+          <ul className="hidden md:flex flex-row items-center invisible md:visible">
+            <li className="text-white font-semibold hover:cursor-pointer py-6 md:py-8 px-6 hover:bg-orange-600 transition duration-250">
               Agenda
             </li>
-            <li className="text-white font-semibold hover:cursor-pointer py-8 px-6 hover:bg-orange-600 transition duration-250">
-              Tickets
+            <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
+              <Link href={TICKETING_URL} target="_blank">
+                Tickets
+              </Link>
             </li>
-            <li className="text-white font-semibold hover:cursor-pointer py-8 px-6 hover:bg-orange-600 transition duration-250">
+            <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
               Contacts
             </li>
           </ul>

@@ -13,6 +13,9 @@ module.exports = {
       backgroundColor: {
         black: "#0a0a0a",
       },
+      strokeWidth: {
+        3: "10px",
+      },
     },
   },
   plugins: [],

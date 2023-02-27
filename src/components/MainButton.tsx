@@ -4,12 +4,13 @@ import React from "react";
 type MainButtonProps = {
   text: string;
   href?: string;
+  newTab?: boolean;
   onClick?: () => void;
 };
 
-function MainButton({ text, href, onClick }: MainButtonProps) {
+function MainButton({ text, href, newTab = false, onClick }: MainButtonProps) {
   return (
-    <Link href={href ?? "/"} target="_blank">
+    <Link href={href ?? "/"} target={newTab ? "_blank" : undefined}>
       <button
         onClick={onClick}
         className="py-4 px-12 font-semibold text-2xl text-white bg-orange-600 hover:opacity-80 hover:ease-linear duration-100"

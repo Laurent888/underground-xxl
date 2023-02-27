@@ -1,26 +1,37 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "../public/sob.jpeg";
+import Logo from "../public/sob.png";
+import Link from "next/link";
+import { TICKETING_URL } from "@/utils/constants";
 
 function Footer() {
   return (
-    <div className="bg-black border-t-2 border-t-gray-900">
-      <div className="py-12 container mx-auto flex flex-col items-center md:flex-row md:justify-between">
+    <div className="bg-black border-t-2 border-t-gray-900 ">
+      <div className="py-12 container mx-auto flex flex-col items-center md:flex-row md:justify-between pb-24">
         <div className="flex flex-col items-center">
-          <div className="w-28 h-28">
+          <div className="w-20 h-20 mb-4">
             <Image src={Logo} style={{ objectFit: "contain" }} alt="sob logo" />
           </div>
           <h3 className="font-bold text-2xl">SOB Productions</h3>
         </div>
 
         <div className="flex flex-col md:flex-row items-center mt-8 md:mt-0">
-          <p className="hover:cursor-pointer hover:opacity-80 md:mr-4">
-            Tickets
-          </p>
-          <p className="hover:cursor-pointer hover:opacity-80 md:mr-4">
-            Agenda
-          </p>
-          <p className="hover:cursor-pointer hover:opacity-80 ">Contact</p>
+          <Link href="/">
+            <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">
+              Home
+            </p>
+          </Link>
+          <Link href={TICKETING_URL} target="_blank">
+            <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">
+              Tickets
+            </p>
+          </Link>
+          <Link href="/agenda">
+            <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">
+              Agenda
+            </p>
+          </Link>
+          <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
         </div>
       </div>
     </div>

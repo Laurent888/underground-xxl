@@ -1,14 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-import PartyImage from "../public/party.jpg";
-import MiguelSunsire from "../public/miguelSunsire.jpeg";
-import IgorRocio from "../public/igorRocio.jpg";
-import CristianGabriella from "../public/cristianGabriella.jpeg";
-import JordiNoora from "../public/jordiNoora.jpg";
-import LaurentDJ from "../public/laurentTram.png";
 import Hero from "@/components/Hero";
 import ArtistCard from "@/components/ArtistCard";
 import { useState } from "react";
@@ -16,6 +9,17 @@ import RoundButton from "@/components/RoundButton";
 import { isMobile } from "react-device-detect";
 import SectionTitle from "@/components/SectionTitle";
 import MainButton from "@/components/MainButton";
+import { TICKETING_URL } from "@/utils/constants";
+
+/** IMAGES */
+import PartyImage from "../public/party.jpg";
+import IgorRocio from "../public/igorRocio.jpg";
+import CristianGabriella from "../public/cristianGabriella.jpeg";
+import JordiNoora from "../public/jordiNoora.jpg";
+import LaurentDJ from "../public/laurentTram.jpg";
+import BabakDJ from "../public/djbabak.jpg";
+import SobBanner from "../public/sob_banner.jpeg";
+import EventFlyer from "../public/event_poster.jpg";
 
 /**
  * Section title: 2xl
@@ -29,20 +33,19 @@ export default function Home() {
     <>
       <div className="bg-black w-screen">
         {/* HERO */}
-        <div style={{ height: "86px" }} />
+        <div className="h-[56px] md:h-[86px]" />
         <Hero />
 
         {/* SECTION INFO */}
-        <div className="md:h-200 flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2 bg-gray-300">
+        <div className="container mx-auto md:h-200 flex flex-col-reverse md:flex-row">
+          <div className="w-full px-8 md:px-0 md:w-1/2 lg:w-[40%] bg-inherit">
             <Image
-              src={PartyImage}
-              style={{ objectFit: "cover" }}
-              className="h-full w-full"
+              src={EventFlyer}
+              className="h-full w-full bg-black object-cover"
               alt="festival flyer"
             />
           </div>
-          <div className="w-full md:w-1/2 bg-black p-10 md:py-24 md:px-24">
+          <div className="w-full md:w-1/2 lg:w-[60%] bg-black p-10 md:py-24 md:px-24">
             <h5 className="text-gray-50 text-lg md:text-2xl pb-4 font-bold">
               HELSINKI, FINLAND
             </h5>
@@ -54,9 +57,9 @@ export default function Home() {
               <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
                 8 hours workshops
               </ul>
-              <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
+              {/* <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
                 2 hours masterclass
-              </ul>
+              </ul> */}
               <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
                 2 parties
               </ul>
@@ -80,10 +83,14 @@ export default function Home() {
 
         {/* ARTISTS */}
         <section className="bg-inherit pb-16 mt-12 md:mt-24">
-          <div className="container mx-auto flex flex-col items-center md:items-start pb-10 container text-center ">
-            <SectionTitle text="Artists at the Underground XXL" />
-            <p className="text-gray-50 text-lg text-center md:text-2xl">
-              A awesome line-up is waiting for you!
+          <div className="container mx-auto flex flex-col items-center md:items-start pb-10 text-center ">
+            <SectionTitle
+              bottomSpacing={false}
+              text="Artists at the Underground XXL"
+            />
+            <p className="text-gray-50 text-lg text-center md:text-2xl mt-4 px-2">
+              An awesome line-up is waiting for you! We are bringing some of the
+              best talents from Spain here in Helsinki.
             </p>
           </div>
 
@@ -94,11 +101,6 @@ export default function Home() {
               transition: `transform 300ms ease-in-out`,
             }}
           >
-            <ArtistCard
-              source={MiguelSunsire}
-              alt="miguel and sunsire"
-              name="Miguel & Sunsire"
-            />
             <ArtistCard
               source={IgorRocio}
               alt="Igor and Rocio"
@@ -115,6 +117,7 @@ export default function Home() {
               name="Jordi & Noora"
             />
             <ArtistCard source={LaurentDJ} alt="DJ Laurent" name="DJ Laurent" />
+            <ArtistCard source={BabakDJ} alt="DJ Babak" name="DJ Babak" />
           </div>
 
           <div className="flex flex-row justify-center md:justify-end container">
@@ -151,10 +154,7 @@ export default function Home() {
               incredible line-up. If you are coming from abroad, send us a
               message by email to get your discount code!
             </p>
-            <MainButton
-              text="Tickets"
-              href="https://buytickets.at/sobproductions/862282"
-            />
+            <MainButton newTab text="Tickets" href={TICKETING_URL} />
           </div>
         </section>
 
@@ -163,7 +163,7 @@ export default function Home() {
           <div className="container md:mx-auto md:h-96 flex flex-col md:flex-row pb-12">
             <div className="md:w-1/2 h-full">
               <Image
-                src={PartyImage}
+                src={SobBanner}
                 alt="crowd"
                 style={{ objectFit: "cover" }}
                 className="h-full"
