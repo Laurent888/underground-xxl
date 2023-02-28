@@ -4,8 +4,11 @@ import Navbar from "./Navbar";
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div>
+    <div className="bg-black">
       <Navbar />
+
+      <div className="h-[56px] md:h-[86px]" />
+
       {children}
       <Footer />
     </div>

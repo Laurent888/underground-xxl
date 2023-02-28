@@ -21,7 +21,7 @@ function Footer() {
               Home
             </p>
           </Link>
-          <Link href={TICKETING_URL} target="_blank">
+          <Link href="tickets">
             <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">
               Tickets
             </p>

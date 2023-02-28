@@ -1,7 +1,4 @@
-import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import styles from "@/styles/Home.module.css";
 import Hero from "@/components/Hero";
 import ArtistCard from "@/components/ArtistCard";
 import { useState } from "react";
@@ -20,6 +17,7 @@ import LaurentDJ from "../public/laurentTram.jpg";
 import BabakDJ from "../public/djbabak.jpg";
 import SobBanner from "../public/sob_banner.jpeg";
 import EventFlyer from "../public/event_poster.jpg";
+import Body from "@/components/Body";
 
 /**
  * Section title: 2xl
@@ -33,7 +31,6 @@ export default function Home() {
     <>
       <div className="bg-black w-screen">
         {/* HERO */}
-        <div className="h-[56px] md:h-[86px]" />
         <Hero />
 
         {/* SECTION INFO */}
@@ -49,25 +46,25 @@ export default function Home() {
             <h5 className="text-gray-50 text-lg md:text-2xl pb-4 font-bold">
               HELSINKI, FINLAND
             </h5>
-            <h3 className="text-gray-50 text-3xl  md:text-6xl font-bold">
+            <h3 className="text-gray-50 text-3xl md:text-6xl font-bold">
               1 - 3 SEPTEMBER 2023
             </h3>
 
-            <li className="pb-8 md:pb-14">
-              <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
+            <ul className="py-8 md:py-14">
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
                 8 hours workshops
-              </ul>
+              </li>
               {/* <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
                 2 hours masterclass
               </ul> */}
-              <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
                 2 parties
-              </ul>
-              <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
+              </li>
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">
                 Taxi dancers
-              </ul>
-            </li>
-            <MainButton text="Agenda" href="/agenda" onClick={() => null} />
+              </li>
+            </ul>
+            <MainButton text="Agenda" href="/agenda" />
           </div>
         </div>
 
@@ -88,10 +85,11 @@ export default function Home() {
               bottomSpacing={false}
               text="Artists at the Underground XXL"
             />
-            <p className="text-gray-50 text-lg text-center md:text-2xl mt-4 px-2">
-              An awesome line-up is waiting for you! We are bringing some of the
-              best talents from Spain here in Helsinki.
-            </p>
+            <Body
+              text="An awesome line-up is waiting for you! We are bringing some of the
+              best talents from Spain here in Helsinki."
+              className="mt-4 px-2"
+            />
           </div>
 
           <div
@@ -124,11 +122,7 @@ export default function Home() {
             <RoundButton
               type="left"
               onClick={() => {
-                if (isMobile) {
-                  if (scrollIndex > 0) setScrollIndex((prev) => prev - 1);
-                } else {
-                  if (scrollIndex > 0) setScrollIndex((prev) => prev - 1);
-                }
+                if (scrollIndex > 0) setScrollIndex((prev) => prev - 1);
               }}
             />
             <div className="w-4" />
@@ -149,12 +143,13 @@ export default function Home() {
         <section className="pb-24">
           <div className="container mx-auto flex flex-col items-center md:items-start">
             <SectionTitle text="Are you ready to join us?" />
-            <p className="pb-8 text-center md:text-start">
-              Get ready for the event of the year in Helsinki with our
+            <Body
+              text="Get ready for the event of the year in Helsinki with our
               incredible line-up. If you are coming from abroad, send us a
-              message by email to get your discount code!
-            </p>
-            <MainButton newTab text="Tickets" href={TICKETING_URL} />
+              message by email to get your discount code!"
+              className="pb-14"
+            />
+            <MainButton text="Tickets" href="/tickets" />
           </div>
         </section>
 
@@ -171,11 +166,11 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-2 md:px-0">
               <SectionTitle text="Summer Outdoor Bachata aka SOB" />
-              <p className="md:text-start text-center">
-                We organize monthly bachata events in Helsinki since 2019 that
-                gather all the dancers from Helsinki area. Checkout out intagram
-                account to get a feeling of our events.
-              </p>
+              <Body
+                text="We organize monthly bachata events in Helsinki since 2019 that
+                gather all the dancers from Helsinki area. The group name is coming from the fact that we organized outdoor events during the summer! 
+                If you want to learn more about us, checkout out Instagram account to get a feeling of our events."
+              />
             </div>
           </div>
         </section>

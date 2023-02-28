@@ -30,7 +30,7 @@ function Navbar() {
                 Agenda
               </li>
             </Link>
-            <Link href={TICKETING_URL} target="_blank">
+            <Link href="/tickets">
               <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
                 Tickets
               </li>
