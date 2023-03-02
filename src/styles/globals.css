@@ -164,6 +164,12 @@ p,h1,h2,h3,h4 {
   transition: opacity 150ms linear;
 }
 
+.roundButton:active { 
+  transform: scale(0.95);
+  transition: transform 50ms linear;
+}
+
+
 @media (max-width: 500px) {
   .artistCard {
     width: 360px;

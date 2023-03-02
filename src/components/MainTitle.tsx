@@ -7,7 +7,7 @@ type MainTitleProps = {
 function MainTitle({ text, bottomSpacing = true }: MainTitleProps) {
   return (
     <h3
-      className={`font-extraboldbold text-2xl md:text-6xl text-center md:text-start ${
+      className={`font-extrabold text-2xl md:text-6xl text-center md:text-start ${
         bottomSpacing && "pb-8"
       }`}
     >

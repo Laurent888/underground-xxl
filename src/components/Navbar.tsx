@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Logo from "../public/underground_logo.png";
-import { TICKETING_URL } from "@/utils/constants";
 
 function Navbar() {
   return (
