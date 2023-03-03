@@ -54,7 +54,7 @@ const ArtistDetailsDrawer = ({
             )}
 
             {artist.instagram != null && (
-              <div className="w-12 h-12">
+              <div className="w-12 h-12 mb-8">
                 <Link href={artist.instagram} target="_blank">
                   <Image src={InstagramLogo} alt="instagram logo" className="h-full w-full object-cover" />
                 </Link>

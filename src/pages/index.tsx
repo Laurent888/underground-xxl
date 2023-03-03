@@ -10,6 +10,7 @@ import EventFlyer from '../public/event_poster.jpg'
 import Body from '@/components/Body'
 import ArtistScrollview, { ArtistCode } from '@/components/ArtistScrollview'
 import ArtistDetailsDrawer from '@/components/ArtistDetailsDrawer'
+import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 
 export default function Home() {
   const [artistCode, setArtistCode] = useState<ArtistCode>('ig')
@@ -68,7 +69,7 @@ export default function Home() {
               incredible line-up. If you are coming from abroad, send us a
               message by email to get your discount code!"
             />
-            <MainButton text="Tickets" href="/tickets" />
+            <TicketButtonNavigation />
           </div>
         </section>
 

@@ -2,6 +2,8 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import MainButton from './MainButton'
+import TicketButtonNavigation from './TicketButtonNavigation'
 
 const NavigationItem = ({ text }: { text: string }) => {
   return <h4 className="font-bold text-white text-2xl mb-8">{text}</h4>
@@ -20,15 +22,16 @@ const MobileMenuDrawer = ({ visible, onClose }: { visible: boolean; onClose: () 
           <Link href="/" onClick={onClose}>
             <NavigationItem text="HOME" />
           </Link>
-          <Link href="/tickets" onClick={onClose}>
-            <NavigationItem text="TICKETS" />
-          </Link>
           <Link href="/agenda" onClick={onClose}>
             <NavigationItem text="AGENDA" />
           </Link>
           <Link href="/contact" onClick={onClose}>
             <NavigationItem text="CONTACT" />
           </Link>
+
+          <div className="pt-10">
+            <TicketButtonNavigation />
+          </div>
         </div>
 
         <div onClick={onClose} className="absolute top-4 right-16">

@@ -1,17 +1,17 @@
-import MainTitle from "@/components/MainTitle";
-import Link from "next/link";
-import Script from "next/script";
-import Image from "next/image";
-import { useEffect } from "react";
-import InstagramLogo from "../public/Instagram-Logo.png";
-import Body from "@/components/Body";
+import MainTitle from '@/components/MainTitle'
+import Link from 'next/link'
+import Image from 'next/image'
+import InstagramLogo from '../public/Instagram-Logo.png'
+import Body from '@/components/Body'
+import { SOB_INSTAGRAM_URL } from '@/utils/constants'
 
 export default function Contact() {
   return (
-    <div className="container mx-auto py-24">
+    <div className="container mx-auto py-24 px-4 md:px-0">
       <MainTitle text="Contact" />
 
       <Body
+        mobileLeft
         text="Feel free to contact us if you have any questions about the events,
         we'll try to answer as fast as possible!"
       />
@@ -20,19 +20,12 @@ export default function Contact() {
         <span className="font-bold">Email</span>: sob.helsinki@gmail.com
       </p>
       <p>
-        <Link
-          href="https://www.instagram.com/sobproductionshki/"
-          target="_blank"
-        >
+        <Link href={SOB_INSTAGRAM_URL} target="_blank">
           <div className="w-12 h-12">
-            <Image
-              src={InstagramLogo}
-              className="object-cover w-full h-full"
-              alt="Instagram logo"
-            />
+            <Image src={InstagramLogo} className="object-cover w-full h-full" alt="Instagram logo" />
           </div>
         </Link>
       </p>
     </div>
-  );
+  )
 }
