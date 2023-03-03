@@ -17,16 +17,16 @@ const MobileMenuDrawer = ({ visible, onClose }: { visible: boolean; onClose: () 
 
       <div className={`z-50 w-screen h-screen fixed bg-black ${visibilityClass} transition duration-200`}>
         <div className="flex flex-col items-end justify-center h-full px-20">
-          <Link href="/">
+          <Link href="/" onClick={onClose}>
             <NavigationItem text="HOME" />
           </Link>
-          <Link href="/tickets">
+          <Link href="/tickets" onClick={onClose}>
             <NavigationItem text="TICKETS" />
           </Link>
-          <Link href="/agenda">
+          <Link href="/agenda" onClick={onClose}>
             <NavigationItem text="AGENDA" />
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" onClick={onClose}>
             <NavigationItem text="CONTACT" />
           </Link>
         </div>
