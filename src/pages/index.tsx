@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
-import { useEffect, useState } from 'react'
-import { isMobile } from 'react-device-detect'
+import { useState } from 'react'
 import SectionTitle from '@/components/SectionTitle'
 import MainButton from '@/components/MainButton'
 
@@ -15,15 +14,6 @@ import ArtistDetailsDrawer from '@/components/ArtistDetailsDrawer'
 export default function Home() {
   const [artistCode, setArtistCode] = useState<ArtistCode>('ig')
   const [showDrawer, setShowDrawer] = useState(false)
-
-  useEffect(() => {
-    // Block the scrolling when drawer is open
-    if (showDrawer) {
-      document.body.style.overflowY = 'hidden'
-    } else {
-      document.body.style.overflowY = 'visible'
-    }
-  }, [showDrawer])
 
   return (
     <>

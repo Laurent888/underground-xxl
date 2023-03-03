@@ -18,7 +18,7 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
   ig: {
     name: 'Igor and Rocio',
     description:
-      'Amazing bachata dancers with a lot of energy. Igor and Rocio have been dancing together since 2016. They currently teach in Santander.',
+      'Amazing bachata dancers with lots of energy. Igor and Rocio have been dancing together since 2016 and currently invited in all major bachata festivals around the world. They currently teach in Santander, Spain.',
     classes: '2 hours class + 1 hour masterclass',
     image: IgorRocio,
     instagram: 'https://www.instagram.com/igoryrocio/',

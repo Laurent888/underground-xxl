@@ -28,7 +28,10 @@ const ArtistDetailsDrawer = ({
   return (
     <>
       {/* Backdrop */}
-      <div className={`z-50 fixed top-0 bg-black opacity-60 h-screen w-screen ${visible ? 'visible' : 'hidden'}`} />
+      <div
+        onClick={onClose}
+        className={`z-50 fixed top-0 bg-black opacity-60 h-screen w-screen ${visible ? 'visible' : 'hidden'}`}
+      />
 
       <div
         className={`z-50 w-[95%] h-[95%] bg-neutral-900 fixed top-6 md:px-14 overflow-y-auto ${visibleClass} transition-all ease-out duration-300`}

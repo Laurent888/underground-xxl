@@ -1,9 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
-import React from "react";
-import Logo from "../public/underground_logo.png";
+import Link from 'next/link'
+import Image from 'next/image'
+import React from 'react'
+import Logo from '../public/underground_logo.png'
+import { isMobile } from 'react-device-detect'
+import { AiOutlineMenu } from 'react-icons/ai'
 
-function Navbar() {
+function Navbar({ onMenuOpen }: { onMenuOpen: () => void }) {
   return (
     <nav className="fixed w-full bg-black z-50">
       <div className="md:container md:mx-auto px-2">
@@ -14,9 +16,9 @@ function Navbar() {
                 src={Logo}
                 alt="logo"
                 style={{
-                  objectFit: "contain",
-                  width: "100%",
-                  height: "100%",
+                  objectFit: 'contain',
+                  width: '100%',
+                  height: '100%',
                 }}
                 loading="eager"
               />
@@ -40,10 +42,14 @@ function Navbar() {
               </li>
             </Link>
           </ul>
+
+          <button className={`absolute right-4 ${isMobile ? 'visible' : 'hidden'}`} onClick={onMenuOpen}>
+            <AiOutlineMenu size={25} color="white" />
+          </button>
         </div>
       </div>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
