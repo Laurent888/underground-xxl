@@ -65,8 +65,8 @@ export default function Home() {
               <SectionTitle text="Are you ready to join us?" />
               <Body
                 text="Get ready for the event of the year in Helsinki with our
-              incredible line-up. If you are coming from abroad, send us a
-              message by email to get your discount code!"
+              incredible line-up. For dancers coming from abroad, we know that a trip to Finland is an extra cost, so send us a
+              message by email or Instagram DM to get your discount code!"
               />
               <div className="mb-4 md:mb-0" />
 
@@ -78,16 +78,15 @@ export default function Home() {
         {/* ABOUT SOB */}
         <section className="bg-inherit">
           <div className="container md:mx-auto md:h-96 flex flex-col md:flex-row pb-12">
-            <AnimatedContainer className="md:w-1/2 h-full">
+            <div className="md:w-1/2 h-full">
               <Image src={SobBanner} alt="crowd" style={{ objectFit: 'cover' }} className="h-full" />
-            </AnimatedContainer>
+            </div>
 
             <AnimatedContainer className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-2 md:px-0">
               <SectionTitle text="Summer Outdoor Bachata aka SOB" />
               <Body
-                text="We organize monthly bachata events in Helsinki since 2019 that
-                gather all the dancers from Helsinki area. The group name is coming from the fact that we organized outdoor events during the summer! 
-                If you want to learn more about us, checkout out Instagram account to get a feeling of our events."
+                text="This is a dancers community group from Helsinki. Group was created in May 2016 to organize dancing picnics at parks and at the beach. 
+              Members have grown from 10 to 1.3k then nowadays we also arrange indoor events year-round and occasionally bigger events with international artists. Follow us on Instagram at @sobproductionshki"
               />
             </AnimatedContainer>
           </div>

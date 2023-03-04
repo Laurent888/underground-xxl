@@ -1,30 +1,9 @@
 import Body from '@/components/Body'
 import HeroImage from '@/components/HeroImage'
-import MainTitle from '@/components/MainTitle'
-import SectionTitle from '@/components/SectionTitle'
-import { useRouter } from 'next/router'
-
-import Link from 'next/link'
 import Script from 'next/script'
-import { useEffect, useRef, useState } from 'react'
 import Hero from '../public/workshop_kc.jpeg'
 
-const url = 'https://cdn.tickettailor.com/js/widgets/min/widget.js'
 export default function Tickets() {
-  const router = useRouter()
-  const [state, setState] = useState(false)
-  const ref = useRef()
-
-  // useEffect(() => {
-  //   console.log(ref.current)
-  //   if (ref.current == null) {
-  //     console.log('>>>>')
-  //     ref.current = true
-  //   }
-  // }, [ref, router])
-
-  console.log(state)
-
   return (
     <>
       <HeroImage src={Hero} title="Tickets" alt="workshop" />
@@ -49,7 +28,7 @@ export default function Tickets() {
           />
 
           <Script
-            src={url}
+            src="https://cdn.tickettailor.com/js/widgets/min/widget.js"
             data-url="https://www.tickettailor.com/checkout/new-session/id/1979805/chk/f691/"
             data-type="inline"
             data-inline-minimal="true"

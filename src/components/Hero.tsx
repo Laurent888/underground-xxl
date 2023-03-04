@@ -21,8 +21,8 @@ function Hero() {
       </video>
       <div className="absolute top-12 left-8 md:bottom-1/3 md:left-32">
         <h5 className="font-bold text-white text-left md:pl-1 mb-2">SEP 1 - SEP 3, HELSINKI</h5>
-        <AnimatedHeroText text="BIGGER" delay={0.2} classname="text-orange-500" />
-        <AnimatedHeroText text="BOLDER" delay={0.6} />
+        <AnimatedHeroText text="BIGGER" delay={0.2} />
+        <AnimatedHeroText text="BOLDER" delay={0.6} classname="text-orange-500" />
         <motion.h3
           initial={{ y: 20, opacity: 0, scale: 0.95 }}
           transition={{ delay: 1, bounce: false, ease: 'easeOut', duration: 0.8 }}

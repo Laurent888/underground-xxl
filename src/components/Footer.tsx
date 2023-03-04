@@ -20,9 +20,10 @@ function Footer() {
           <Link href="/">
             <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Home</p>
           </Link>
-          <Link href="tickets">
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/tickets">
             <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Tickets</p>
-          </Link>
+          </a>
           <Link href="/agenda">
             <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Agenda</p>
           </Link>
