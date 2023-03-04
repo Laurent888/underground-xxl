@@ -1,19 +1,45 @@
 import Body from '@/components/Body'
 import HeroImage from '@/components/HeroImage'
+import SectionTitle from '@/components/SectionTitle'
 import Script from 'next/script'
 import Hero from '../public/workshop_kc.jpeg'
 
 export default function Tickets() {
   return (
     <>
-      <HeroImage src={Hero} title="Tickets" alt="workshop" />
+      <HeroImage src={Hero} title="TICKETS" alt="workshop" />
       <div className="container mx-auto">
         <div className="px-2 md:px-0 pt-10 pb-8">
-          <Body
-            mobileLeft
-            text="Full pass includes workshops and parties. It does NOT include the Masterclass with Igor & Rocio. You need to buy an add-on that will be available later."
-          />
-          <Body mobileLeft text="1 - 3 SEPTEMBER 2023 - HELSINKI, FINLAND" />
+          <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
+          <ul>
+            <li>🔸 Access to all workshops except the masterclass</li>
+            <li>🔸 Friday and Saturday parties</li>
+            <li>🔸 30% off for dancers living outside of Finland. Send an message for discount code.</li>
+          </ul>
+
+          <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
+          <ul>
+            <li>🌟 Igor and Rocio (2h)</li>
+            <li>🌟 Cristian and Gabriella (3h)</li>
+            <li>🌟 Jordi and Noora (2h)</li>
+          </ul>
+
+          <h5 className="font-bold text-xl md:text-2xl pb-4 mt-6">Not included in Full pass:</h5>
+          <ul>
+            <li>🔸 Masterclass with Igor and Rocio (1h)</li>
+          </ul>
+        </div>
+
+        <div className="pb-8">
+          <p>
+            Please note that all purchase are non refundable. In case you change your mind, you are able to change the
+            ticket name for 10 euros fee until one week before the event.
+          </p>
+        </div>
+
+        <div className="pb-8">
+          <p>Event is organized by: SOB Productions</p>
+          <p>Email: sob.helsinki@gmail.com</p>
         </div>
 
         {/* Ticket Tailor embedded code */}

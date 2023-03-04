@@ -172,12 +172,12 @@ p,h1,h2,h3,h4 {
   transition: transform 50ms linear;
 }
 
-.test {
-  -webkit-text-stroke-width: 3px;
+.heroTitle {
+  -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-  font-size: 40px;
+  font-size: 90px;
 }
 
 
@@ -204,6 +204,14 @@ p,h1,h2,h3,h4 {
   .scrollArtistsMaxRight {
     transform: translateX(-760px);
     transition: transform 300ms ease-in-out;
+  }
+
+  .heroTitle {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 40px;
   }
 }
 

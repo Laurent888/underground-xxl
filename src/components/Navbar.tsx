@@ -42,11 +42,13 @@ function Navbar({ onMenuOpen }: { onMenuOpen: () => void }) {
                 Agenda
               </li>
             </Link>
-            <Link href="/tickets">
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+            <a href="/tickets">
               <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
                 Tickets
               </li>
-            </Link>
+            </a>
+
             <Link href="/contact">
               <li className="text-white font-semibold hover:cursor-pointer py-6 md:-py-8 px-6 hover:bg-orange-600 transition duration-250">
                 Contacts
