@@ -1,27 +1,43 @@
-import Body from '@/components/Body'
 import HeroImage from '@/components/HeroImage'
-import SectionTitle from '@/components/SectionTitle'
 import Script from 'next/script'
-import Hero from '../public/workshop_kc.jpeg'
+import { isMobile } from 'react-device-detect'
+import { useEffect, useState } from 'react'
 
 export default function Tickets() {
+  const [showMobileImage, setShowMobileImage] = useState(true)
+
+  useEffect(() => {
+    if (isMobile) {
+      setShowMobileImage(true)
+    } else {
+      setShowMobileImage(false)
+    }
+  }, [])
+
   return (
     <>
-      <HeroImage src={Hero} title="TICKETS" alt="workshop" />
+      {showMobileImage ? (
+        <HeroImage src={require('../public/event_poster.jpg')} title="TICKETS" alt="workshop" />
+      ) : (
+        <HeroImage src={require('../public/underground_facebookbanner.png')} title="TICKETS" alt="workshop" />
+      )}
+
       <div className="container mx-auto">
         <div className="px-2 md:px-0 pt-10 pb-8">
           <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
           <ul>
-            <li>🔸 Access to all workshops except the masterclass</li>
-            <li>🔸 Friday and Saturday parties</li>
-            <li>🔸 30% off for dancers living outside of Finland. Send an message for discount code.</li>
+            <li className="pb-2">🔸 Access to all workshops except the masterclass</li>
+            <li className="pb-2">🔸 Friday and Saturday parties</li>
+            <li className="pb-2">
+              🔸 30% off for dancers living outside of Finland. Send an message for discount code.
+            </li>
           </ul>
 
           <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
           <ul>
-            <li>🌟 Igor and Rocio (2h)</li>
-            <li>🌟 Cristian and Gabriella (3h)</li>
-            <li>🌟 Jordi and Noora (2h)</li>
+            <li className="pb-2">🌟 Igor and Rocio (2h)</li>
+            <li className="pb-2">🌟 Cristian and Gabriella (3h)</li>
+            <li className="pb-2">🌟 Jordi and Noora (2h)</li>
           </ul>
 
           <h5 className="font-bold text-xl md:text-2xl pb-4 mt-6">Not included in Full pass:</h5>

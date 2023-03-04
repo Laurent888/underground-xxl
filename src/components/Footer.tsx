@@ -8,7 +8,7 @@ import { SOB_INSTAGRAM_URL } from '@/utils/constants'
 function Footer() {
   return (
     <div className="bg-black border-t-2 border-t-gray-900 ">
-      <div className="py-12 container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-center pb-24">
+      <div className="py-8 container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-center">
         <div className="flex flex-col items-center">
           <div className="w-20 h-20 mb-4">
             <Image src={Logo} style={{ objectFit: 'contain' }} alt="sob logo" />
@@ -30,11 +30,14 @@ function Footer() {
           <Link href="/contact">
             <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
           </Link>
+          <Link href={SOB_INSTAGRAM_URL} className="mt-4 md:mt-0 w-12 h-12 md:ml-8">
+            <Image src={InstagramLogo} alt="insta logo" className="object-cover h-full w-full" />
+          </Link>
         </div>
+      </div>
 
-        <Link href={SOB_INSTAGRAM_URL} className="mt-4 md:mt-0 w-12 h-12">
-          <Image src={InstagramLogo} alt="insta logo" className="object-cover h-full w-full" />
-        </Link>
+      <div className="font-medium text-sm text-center py-4 text-neutral-500">
+        Website and visuals made with 🤍 by Laurent Tram
       </div>
     </div>
   )

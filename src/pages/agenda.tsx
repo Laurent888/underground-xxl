@@ -1,16 +1,30 @@
-import HeroImage from "@/components/HeroImage";
-import SectionTitle from "@/components/SectionTitle";
-import Link from "next/link";
-import ConcertImage from "../public/concert.jpg";
+import HeroImage from '@/components/HeroImage'
+import SectionTitle from '@/components/SectionTitle'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { isMobile } from 'react-device-detect'
 
 export default function Agenda() {
+  const [showMobileImage, setShowMobileImage] = useState(true)
+
+  useEffect(() => {
+    if (isMobile) {
+      setShowMobileImage(true)
+    } else {
+      setShowMobileImage(false)
+    }
+  }, [])
+
   return (
     <div className="bg-black">
-      <HeroImage src={ConcertImage} alt="concert" title="Agenda" />
+      {showMobileImage ? (
+        <HeroImage src={require('../public/event_poster.jpg')} title="AGENDA" alt="workshop" />
+      ) : (
+        <HeroImage src={require('../public/underground_facebookbanner.png')} title="AGENDA" alt="workshop" />
+      )}
+
       <section className="container mt-12 mx-auto flex flex-col items-center">
-        <p className="mb-12 text-center mx-2">
-          Here is an overview of the agenda. It will be subject to changes
-        </p>
+        <p className="mb-12 text-center mx-2">Here is an overview of the agenda. It will be subject to changes</p>
 
         <div className="mb-8">
           <SectionTitle bottomSpacing={false} text="Friday" />
@@ -29,5 +43,5 @@ export default function Agenda() {
         </div>
       </section>
     </div>
-  );
+  )
 }

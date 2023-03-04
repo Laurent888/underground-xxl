@@ -6,7 +6,7 @@ import MainButton from '@/components/MainButton'
 
 /** IMAGES */
 import SobBanner from '../public/sob_banner.jpeg'
-import EventFlyer from '../public/event_poster.jpg'
+import Collage from '../public/Collage.png'
 import Body from '@/components/Body'
 import ArtistScrollview, { ArtistCode } from '@/components/ArtistScrollview'
 import ArtistDetailsDrawer from '@/components/ArtistDetailsDrawer'
@@ -32,11 +32,11 @@ export default function Home() {
         <Hero />
 
         {/* SECTION INFO */}
-        <div className="container mt-12 mx-auto md:h-200 flex flex-col-reverse md:flex-row">
-          <div className="w-full px-8 md:px-0 md:w-1/2 lg:w-[40%] bg-inherit">
-            <Image src={EventFlyer} className="h-full w-full bg-black object-cover" alt="festival flyer" />
+        <div className="container mx-auto md:h-200 flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 lg:w-[45%] bg-inherit">
+            <Image src={Collage} className="h-full w-full bg-black object-cover" alt="collage" />
           </div>
-          <div className="w-full md:w-1/2 lg:w-[60%] bg-black p-10 md:py-24 md:px-24">
+          <div className="w-full md:w-1/2 lg:w-[55%] bg-black p-10 md:py-24 md:px-24">
             <h5 className="text-gray-50 text-lg md:text-2xl pb-4 font-bold">HELSINKI, FINLAND</h5>
             <h3 className="text-gray-50 text-3xl md:text-6xl font-bold">1 - 3 SEPTEMBER 2023</h3>
 
