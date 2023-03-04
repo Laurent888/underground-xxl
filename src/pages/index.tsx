@@ -11,6 +11,7 @@ import Body from '@/components/Body'
 import ArtistScrollview, { ArtistCode } from '@/components/ArtistScrollview'
 import ArtistDetailsDrawer from '@/components/ArtistDetailsDrawer'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
+import AnimatedContainer from '@/components/motion/AnimatedContainer'
 
 export default function Home() {
   const [artistCode, setArtistCode] = useState<ArtistCode>('ig')
@@ -49,16 +50,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* HEADLINE */}
-        {/* <div className="h-96 flex flex-col justify-center items-center bg-inherit px-4">
-          <SectionTitle text="What is the Underground XXL" />
-          <p className="text-gray-50 text-lg md:text-2xl text-center md:text-left pb-8">
-            We are a commmunity driven bachata dancers who want to organize an
-            awesome and affordable event with international artists{" "}
-          </p>
-          <MainButton text="Tickets" onClick={() => null} />
-        </div> */}
-
         {/* ARTISTS */}
         <ArtistScrollview
           onClick={(code) => {
@@ -69,32 +60,36 @@ export default function Home() {
 
         {/* CALL TO ACTION */}
         <section className="pb-24">
-          <div className="container mx-auto flex flex-col items-center md:items-start">
-            <SectionTitle text="Are you ready to join us?" />
-            <Body
-              bottomSpacing
-              text="Get ready for the event of the year in Helsinki with our
+          <AnimatedContainer>
+            <div className="container mx-auto flex flex-col items-center md:items-start">
+              <SectionTitle text="Are you ready to join us?" />
+              <Body
+                text="Get ready for the event of the year in Helsinki with our
               incredible line-up. If you are coming from abroad, send us a
               message by email to get your discount code!"
-            />
-            <TicketButtonNavigation />
-          </div>
+              />
+              <div className="mb-4 md:mb-0" />
+
+              <TicketButtonNavigation />
+            </div>
+          </AnimatedContainer>
         </section>
 
         {/* ABOUT SOB */}
         <section className="bg-inherit">
           <div className="container md:mx-auto md:h-96 flex flex-col md:flex-row pb-12">
-            <div className="md:w-1/2 h-full">
+            <AnimatedContainer className="md:w-1/2 h-full">
               <Image src={SobBanner} alt="crowd" style={{ objectFit: 'cover' }} className="h-full" />
-            </div>
-            <div className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-2 md:px-0">
+            </AnimatedContainer>
+
+            <AnimatedContainer className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-2 md:px-0">
               <SectionTitle text="Summer Outdoor Bachata aka SOB" />
               <Body
                 text="We organize monthly bachata events in Helsinki since 2019 that
                 gather all the dancers from Helsinki area. The group name is coming from the fact that we organized outdoor events during the summer! 
                 If you want to learn more about us, checkout out Instagram account to get a feeling of our events."
               />
-            </div>
+            </AnimatedContainer>
           </div>
         </section>
       </div>
