@@ -13,7 +13,7 @@ import JordiNoora from '../public/jordiNoora.jpg'
 import LaurentDJ from '../public/laurentTram.jpg'
 import BabakDJ from '../public/djbabak.jpg'
 
-const CARD_WIDTH = isMobile ? 392 : 480
+const CARD_WIDTH = isMobile ? 368 : 480
 
 export type ArtistCode = 'ig' | 'cg' | 'jn' | 'lt' | 'bm'
 

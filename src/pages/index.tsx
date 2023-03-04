@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Hero from '@/components/Hero'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import SectionTitle from '@/components/SectionTitle'
 import MainButton from '@/components/MainButton'
 
@@ -15,6 +15,14 @@ import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 export default function Home() {
   const [artistCode, setArtistCode] = useState<ArtistCode>('ig')
   const [showDrawer, setShowDrawer] = useState(false)
+
+  useEffect(() => {
+    if (showDrawer) {
+      window.document.querySelector('html')?.classList.add('noscroll')
+    } else {
+      window.document.querySelector('html')?.classList.remove('noscroll')
+    }
+  }, [showDrawer])
 
   return (
     <>

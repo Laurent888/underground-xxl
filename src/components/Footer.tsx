@@ -26,7 +26,9 @@ function Footer() {
           <Link href="/agenda">
             <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Agenda</p>
           </Link>
-          <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
+          <Link href="/contact">
+            <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
+          </Link>
         </div>
 
         <Link href={SOB_INSTAGRAM_URL} className="mt-4 md:mt-0 w-12 h-12">
