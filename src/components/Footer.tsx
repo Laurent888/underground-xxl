@@ -3,8 +3,9 @@ import Image from 'next/image'
 import Logo from '../public/sob.png'
 import Link from 'next/link'
 
-import { SOB_INSTAGRAM_URL } from '@/utils/constants'
+import { SOB_FACEBOOK_URL, SOB_INSTAGRAM_URL } from '@/utils/constants'
 import InstagramLogo from './InstagramLogo'
+import FacebookLogo from './FacebookLogo'
 
 function Footer() {
   return (
@@ -31,9 +32,15 @@ function Footer() {
           <Link href="/contact">
             <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
           </Link>
-          <Link href={SOB_INSTAGRAM_URL} className="mt-4 md:mt-0 md:ml-8">
-            <InstagramLogo />
-          </Link>
+
+          <div className="flex flex-row items-center">
+            <Link href={SOB_INSTAGRAM_URL} target="_blank" className="mt-4 md:mt-0 md:ml-8">
+              <InstagramLogo />
+            </Link>
+            <Link href={SOB_FACEBOOK_URL} target="_blank" className="mt-4 md:mt-0 ml-2">
+              <FacebookLogo />
+            </Link>
+          </div>
         </div>
       </div>
 

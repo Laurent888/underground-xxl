@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Body from '@/components/Body'
-import { SOB_INSTAGRAM_URL } from '@/utils/constants'
+import { SOB_FACEBOOK_URL, SOB_INSTAGRAM_URL } from '@/utils/constants'
 import HeroImage from '@/components/HeroImage'
 import InstagramLogo from '@/components/InstagramLogo'
+import FacebookLogo from '@/components/FacebookLogo'
 
 export default function Contact() {
   return (
@@ -29,9 +30,16 @@ export default function Contact() {
           </div>
 
           <p className="text-neutral-400 pb-2">Instagram</p>
-          <p>
+          <p className="mb-4">
             <Link href={SOB_INSTAGRAM_URL} target="_blank">
               <InstagramLogo />
+            </Link>
+          </p>
+
+          <p className="text-neutral-400 pb-2">Facebook</p>
+          <p>
+            <Link href={SOB_FACEBOOK_URL} target="_blank">
+              <FacebookLogo />
             </Link>
           </p>
         </div>
