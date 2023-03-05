@@ -7,6 +7,10 @@ import { AiOutlineLeftCircle } from 'react-icons/ai'
 import Body from './Body'
 import Link from 'next/link'
 import InstagramLogo from './InstagramLogo'
+import { motion, useAnimation, useMotionValue } from 'framer-motion'
+import { useWindowSize } from '@/utils/useWindowDimention'
+
+const initials = { x: 0, transition: { bounce: false, duration: 0.4, ease: 'easeOut' } }
 
 const ArtistDetailsDrawer = ({
   visible,
@@ -18,12 +22,22 @@ const ArtistDetailsDrawer = ({
   onClose: () => void
 }): JSX.Element => {
   const [artist, setArtist] = useState(artistsData.ig)
+  const x = useMotionValue(-2000)
+  const controls = useAnimation()
+
+  const { width } = useWindowSize()
 
   useEffect(() => {
     setArtist(artistsData[code])
   }, [code])
 
-  const visibleClass = visible ? 'translate-x-0' : '-translate-x-full'
+  useEffect(() => {
+    if (visible) {
+      controls.start(initials)
+    } else {
+      controls.start({ x: -(width ?? 500), transition: { bounce: false, duration: 0.3, ease: 'easeOut' } })
+    }
+  }, [controls, visible, width])
 
   return (
     <>
@@ -33,8 +47,21 @@ const ArtistDetailsDrawer = ({
         className={`z-50 fixed top-0 bg-black opacity-60 h-screen w-screen ${visible ? 'visible' : 'hidden'}`}
       />
 
-      <div
-        className={`z-50 w-[95%] h-[95%] bg-neutral-900 fixed top-6 md:px-14 overflow-y-auto ${visibleClass} transition-all ease-out duration-300`}
+      <motion.div
+        drag="x"
+        style={{ x }}
+        animate={controls}
+        dragConstraints={{ right: 0 }}
+        onDragEnd={() => {
+          if (x.get() < -80) {
+            // Close the modal
+            onClose()
+          } else {
+            controls.start(initials)
+          }
+        }}
+        dragElastic={0}
+        className={`z-50 w-[95%] h-[95%] bg-neutral-900 fixed top-6 md:px-14 overflow-y-auto`}
       >
         <div className="h-[80px] md:h-[150px] w-full absolute top-0 bg-gradient-to-b from-neutral-800 to-transparent" />
 
@@ -63,15 +90,13 @@ const ArtistDetailsDrawer = ({
                 </Link>
               </div>
             )}
-
-            <div className="h-64"></div>
           </div>
         </div>
 
-        <button className="fixed top-4 left-4" onClick={onClose}>
+        <button className="absolute top-4 left-4" onClick={onClose}>
           <AiOutlineLeftCircle color="white" className="w-6 h-6" />
         </button>
-      </div>
+      </motion.div>
     </>
   )
 }

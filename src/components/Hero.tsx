@@ -36,7 +36,7 @@ function Hero() {
           initial={{ x: -20, opacity: 0 }}
           transition={{ delay: 1.4, duration: 0.5, bounce: false, ease: 'easeOut' }}
           animate={{ x: 0, opacity: 1 }}
-          className="text-lg font-semibold mt-8 pr-6"
+          className="text-lg text-white font-medium mt-8 pr-6"
         >
           Workshops with international teachers, two nights of dancings. It is time to bring the Underground to the next
           level!
