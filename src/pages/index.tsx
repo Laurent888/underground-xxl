@@ -80,7 +80,7 @@ export default function Home() {
 
         {/* ABOUT SOB */}
         <section className="bg-inherit">
-          <div className="container md:mx-auto md:h-96 flex flex-col md:flex-row pb-12">
+          <div className="container md:mx-auto flex flex-col md:flex-row pb-12">
             <div className="md:w-1/2 h-full">
               <Image
                 src={require('../public/sob_banner.jpeg')}
@@ -94,9 +94,22 @@ export default function Home() {
                 Summer Outdoor Bachata aka <span className="text-orange-600">SOB</span>
               </SectionTitle>
               <Body
+                bottomSpacing={false}
                 text="This is a dancers community group from Helsinki. Group was created in May 2016 to organize dancing picnics at parks and at the beach. 
-              Members have grown from 10 to 1.3k then nowadays we also arrange indoor events year-round and occasionally bigger events with international artists. Follow us on Instagram at @sobproductionshki"
+              Members have grown from 10 to 1.3k then nowadays we also arrange indoor events year-round and occasionally bigger events with international artists."
               />
+
+              <p className="text-center md:text-start">
+                Follow us on Instagram at{' '}
+                <a
+                  href="https://www.instagram.com/sobproductionshki/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-bold"
+                >
+                  @sobproductionshki
+                </a>
+              </p>
             </AnimatedContainer>
           </div>
         </section>
