@@ -2,6 +2,13 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontWeight: {
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '800',
+      extrabold: '900',
+    },
     extend: {
       theme: {
         fontFamily: {

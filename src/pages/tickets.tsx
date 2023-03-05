@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { isMobile } from 'react-device-detect'
 import { useEffect, useState } from 'react'
 import Body from '@/components/Body'
+import Image from 'next/image'
 
 export default function Tickets() {
   const [showMobileImage, setShowMobileImage] = useState(true)
@@ -24,50 +25,52 @@ export default function Tickets() {
       )}
 
       <div className="container mx-auto">
-        <div className="px-4 md:px-0 pt-10 pb-6">
-          <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
-          <ul>
-            <li className="pb-2">🔸 Access to all workshops except the masterclass</li>
-            <li className="pb-2">🔸 Friday and Saturday parties</li>
-            <li className="pb-2">
-              🔸 30% off for dancers living outside of Finland. Send an message for discount code.
-            </li>
-          </ul>
+        <section className="px-4 md:px-0 pt-10 pb-6 flex flex-col-reverse md:flex-row">
+          <div className="w-full md:w-1/2 ">
+            <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
+            <ul>
+              <li className="pb-2">🔸 Access to all workshops except the masterclass</li>
+              <li className="pb-2">🔸 Friday and Saturday parties</li>
+              <li className="pb-2">
+                🔸 30% off for dancers living outside of Finland. Send an message for discount code.
+              </li>
+            </ul>
 
-          <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
-          <ul>
-            <li className="pb-2">🌟 Igor and Rocio (2h)</li>
-            <li className="pb-2">🌟 Cristian and Gabriella (3h)</li>
-            <li className="pb-2">🌟 Jordi and Noora (2h)</li>
-          </ul>
+            <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
+            <ul>
+              <li className="pb-2">🌟 Igor and Rocio (2h)</li>
+              <li className="pb-2">🌟 Cristian and Gabriella (3h)</li>
+              <li className="pb-2">🌟 Jordi and Noora (2h)</li>
+            </ul>
 
-          <h5 className="font-bold text-xl md:text-2xl pb-6 mt-6">Not included in Full pass:</h5>
-          <ul className="pb-8">
-            <li>🔸 Masterclass with Igor and Rocio (1h)</li>
-          </ul>
+            <h5 className="font-bold text-xl md:text-2xl pb-6 mt-6">Not included in Full pass:</h5>
+            <ul className="pb-8">
+              <li>🔸 Masterclass with Igor and Rocio (1h)</li>
+            </ul>
 
-          <p className="font-semibold text-neutral-400">Refund policy</p>
-          <Body
-            mobileLeft
-            text="Please note that all purchase are non refundable. In case you change your mind, you are able to change the
+            <p className="font-semibold text-neutral-400">Refund policy</p>
+            <Body
+              mobileLeft
+              text="Please note that all purchase are non refundable. In case you change your mind, you are able to change the
             ticket name for 10 euros fee until one week before the event."
-          />
-        </div>
-
-        <div className="px-4 md:px-0 pb-8">
-          <p className="text-neutral-400 pb-2">Organizer</p>
-          <p className="mb-4 text-white">SOB Productions</p>
-
-          <p className="text-neutral-400 pb-2">Email</p>
-          <div className="mb-4">
-            <a href="mailto:sob.helsinki@gmail.com" className="font-semibold">
-              sob.helsinki@gmail.com
-            </a>
+            />
           </div>
-        </div>
+          <div className="md:h-[600px] w-full md:w-1/2 md:pl-12 mb-12">
+            <Image
+              src={require('../public/event_poster.jpg')}
+              alt="event poster"
+              className="h-full w-full object-contain"
+            />
+          </div>
+        </section>
 
         {/* Ticket Tailor embedded code */}
-        <div className="bg-black pb-14">
+        <section className="px-4 md:px-0 pb-14">
+          <h2 className="text-4xl md:text-6xl font-extrabold italic">
+            TICKETS AVAILABLE <span className="text-orange-600">SOON</span>
+          </h2>
+        </section>
+        {/* <section className="bg-black pb-14">
           <div
             id="someId"
             dangerouslySetInnerHTML={{
@@ -87,7 +90,19 @@ export default function Tickets() {
             data-inline-inherit-ref-from-url-param=""
             data-inline-ref="website_widget"
           />
-        </div>
+        </section> */}
+
+        <section className="px-4 md:px-0 pb-14">
+          <p className="text-neutral-400 pb-2">Organizer</p>
+          <p className="mb-4 text-white">SOB Productions</p>
+
+          <p className="text-neutral-400 pb-2">Email</p>
+          <div className="mb-4">
+            <a href="mailto:sob.helsinki@gmail.com" className="font-semibold">
+              sob.helsinki@gmail.com
+            </a>
+          </div>
+        </section>
       </div>
     </>
   )

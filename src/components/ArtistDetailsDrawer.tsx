@@ -10,7 +10,7 @@ import InstagramLogo from './InstagramLogo'
 import { motion, useAnimation, useMotionValue } from 'framer-motion'
 import { useWindowSize } from '@/utils/useWindowDimention'
 
-const initials = { x: 0, transition: { bounce: false, duration: 0.4, ease: 'easeOut' } }
+const initials = { x: 0, transition: { bounce: false, duration: 0.3, ease: 'easeOut' } }
 
 const ArtistDetailsDrawer = ({
   visible,
@@ -35,7 +35,7 @@ const ArtistDetailsDrawer = ({
     if (visible) {
       controls.start(initials)
     } else {
-      controls.start({ x: -(width ?? 500), transition: { bounce: false, duration: 0.3, ease: 'easeOut' } })
+      controls.start({ x: -(width ?? 500), transition: { bounce: false, duration: 0.2, ease: 'easeOut' } })
     }
   }, [controls, visible, width])
 

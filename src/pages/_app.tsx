@@ -30,6 +30,11 @@ const montserrat = localFont({
       weight: '900',
       style: 'normal',
     },
+    {
+      path: '../fonts/Montserrat-ExtraBoldItalic.ttf',
+      weight: '900',
+      style: 'italic',
+    },
   ],
   variable: '--font-montserrat',
 })
