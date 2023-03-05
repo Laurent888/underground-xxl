@@ -172,10 +172,15 @@ p,h1,h2,h3,h4 {
   transition: transform 50ms linear;
 }
 
-.heroTitle {
+.heroTitleOutline {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
   -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 90px;
+}
+
+.heroTitle {
   font-weight: 900;
   font-size: 90px;
 }
@@ -211,7 +216,11 @@ p,h1,h2,h3,h4 {
     -webkit-text-stroke-color: white;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 50px;
+  }
+
+  .heroTitleOutline {
+    visibility: hidden;
   }
 }
 

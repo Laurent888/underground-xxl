@@ -2,8 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from '../public/sob.png'
 import Link from 'next/link'
-import InstagramLogo from '../public/Instagram-Logo.png'
+
 import { SOB_INSTAGRAM_URL } from '@/utils/constants'
+import InstagramLogo from './InstagramLogo'
 
 function Footer() {
   return (
@@ -30,8 +31,8 @@ function Footer() {
           <Link href="/contact">
             <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
           </Link>
-          <Link href={SOB_INSTAGRAM_URL} className="mt-4 md:mt-0 w-12 h-12 md:ml-8">
-            <Image src={InstagramLogo} alt="insta logo" className="object-cover h-full w-full" />
+          <Link href={SOB_INSTAGRAM_URL} className="mt-4 md:mt-0 md:ml-8">
+            <InstagramLogo />
           </Link>
         </div>
       </div>

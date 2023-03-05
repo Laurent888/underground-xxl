@@ -5,8 +5,8 @@ import { ArtistCode } from './ArtistScrollview'
 import { artistsData } from '@/data/artists'
 import { AiOutlineLeftCircle } from 'react-icons/ai'
 import Body from './Body'
-import InstagramLogo from '../public/Instagram-Logo.png'
 import Link from 'next/link'
+import InstagramLogo from './InstagramLogo'
 
 const ArtistDetailsDrawer = ({
   visible,
@@ -36,6 +36,8 @@ const ArtistDetailsDrawer = ({
       <div
         className={`z-50 w-[95%] h-[95%] bg-neutral-900 fixed top-6 md:px-14 overflow-y-auto ${visibleClass} transition-all ease-out duration-300`}
       >
+        <div className="h-[80px] md:h-[150px] w-full absolute top-0 bg-gradient-to-b from-neutral-800 to-transparent" />
+
         <div className="flex flex-col md:flex-row h-full">
           <div className="relative w-full md:w-1/2 h-1/2 md:h-full">
             <Image src={artist.image} alt={artist.name} className="object-cover object-top w-full h-full" />
@@ -54,16 +56,19 @@ const ArtistDetailsDrawer = ({
             )}
 
             {artist.instagram != null && (
-              <div className="w-12 h-12 mb-8">
+              <div className="mb-8">
+                <p className="text-neutral-400 pb-2">Instagram</p>
                 <Link href={artist.instagram} target="_blank">
-                  <Image src={InstagramLogo} alt="instagram logo" className="h-full w-full object-cover" />
+                  <InstagramLogo />
                 </Link>
               </div>
             )}
+
+            <div className="h-64"></div>
           </div>
         </div>
 
-        <button className="absolute top-4 left-4" onClick={onClose}>
+        <button className="fixed top-4 left-4" onClick={onClose}>
           <AiOutlineLeftCircle color="white" className="w-6 h-6" />
         </button>
       </div>

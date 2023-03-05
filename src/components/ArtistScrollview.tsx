@@ -46,11 +46,13 @@ const ArtistScrollview = ({ onClick }: ArtistScrollviewProps): JSX.Element => {
   return (
     <section className="bg-inherit pb-16 mt-12 md:mt-24">
       <div className="container mx-auto flex flex-col items-center md:items-start md:pb-10 text-center ">
-        <SectionTitle bottomSpacing={false} text="Artists at the Underground XXL" />
+        <SectionTitle bottomSpacing={false}>
+          Artists at the Underground <span className="text-orange-600">XXL</span>
+        </SectionTitle>
         <Body
           text="An awesome line-up is waiting for you! We are bringing some of the
         best talents from Spain here in Helsinki."
-          className="mt-4 px-2"
+          className="mt-4 px-2 md:px-0"
         />
       </div>
 

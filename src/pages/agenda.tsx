@@ -17,11 +17,7 @@ export default function Agenda() {
 
   return (
     <div className="bg-black">
-      {showMobileImage ? (
-        <HeroImage src={require('../public/event_poster.jpg')} title="AGENDA" alt="workshop" />
-      ) : (
-        <HeroImage src={require('../public/underground_facebookbanner.png')} title="AGENDA" alt="workshop" />
-      )}
+      <HeroImage src={require('../public/gradientBg.jpg')} title="AGENDA" alt="gradient" />
 
       <section className="container mt-12 mx-auto flex flex-col items-center">
         <p className="mb-12 text-center mx-2">Here is an overview of the agenda. It will be subject to changes</p>

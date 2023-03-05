@@ -61,8 +61,10 @@ export default function Home() {
         {/* CALL TO ACTION */}
         <section className="pb-24">
           <AnimatedContainer>
-            <div className="container mx-auto flex flex-col items-center md:items-start">
-              <SectionTitle text="Are you ready to join us?" />
+            <div className="container mx-auto flex flex-col px-4 md:px-0 items-center md:items-start">
+              <SectionTitle>
+                Are you <span className="text-orange-600">ready</span> to join us?
+              </SectionTitle>
               <Body
                 text="Get ready for the event of the year in Helsinki with our
               incredible line-up. For dancers coming from abroad, we know that a trip to Finland is an extra cost, so send us a
@@ -82,8 +84,10 @@ export default function Home() {
               <Image src={SobBanner} alt="crowd" style={{ objectFit: 'cover' }} className="h-full" />
             </div>
 
-            <AnimatedContainer className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-2 md:px-0">
-              <SectionTitle text="Summer Outdoor Bachata aka SOB" />
+            <AnimatedContainer className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-4 md:px-0">
+              <SectionTitle>
+                Summer Outdoor Bachata aka <span className="text-orange-400">SOB</span>
+              </SectionTitle>
               <Body
                 text="This is a dancers community group from Helsinki. Group was created in May 2016 to organize dancing picnics at parks and at the beach. 
               Members have grown from 10 to 1.3k then nowadays we also arrange indoor events year-round and occasionally bigger events with international artists. Follow us on Instagram at @sobproductionshki"

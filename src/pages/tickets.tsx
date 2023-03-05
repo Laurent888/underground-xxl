@@ -2,6 +2,7 @@ import HeroImage from '@/components/HeroImage'
 import Script from 'next/script'
 import { isMobile } from 'react-device-detect'
 import { useEffect, useState } from 'react'
+import Body from '@/components/Body'
 
 export default function Tickets() {
   const [showMobileImage, setShowMobileImage] = useState(true)
@@ -23,7 +24,7 @@ export default function Tickets() {
       )}
 
       <div className="container mx-auto">
-        <div className="px-2 md:px-0 pt-10 pb-8">
+        <div className="px-4 md:px-0 pt-10 pb-6">
           <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
           <ul>
             <li className="pb-2">🔸 Access to all workshops except the masterclass</li>
@@ -40,26 +41,33 @@ export default function Tickets() {
             <li className="pb-2">🌟 Jordi and Noora (2h)</li>
           </ul>
 
-          <h5 className="font-bold text-xl md:text-2xl pb-4 mt-6">Not included in Full pass:</h5>
-          <ul>
+          <h5 className="font-bold text-xl md:text-2xl pb-6 mt-6">Not included in Full pass:</h5>
+          <ul className="pb-8">
             <li>🔸 Masterclass with Igor and Rocio (1h)</li>
           </ul>
+
+          <p className="font-semibold text-neutral-400">Refund policy</p>
+          <Body
+            mobileLeft
+            text="Please note that all purchase are non refundable. In case you change your mind, you are able to change the
+            ticket name for 10 euros fee until one week before the event."
+          />
         </div>
 
-        <div className="pb-8">
-          <p>
-            Please note that all purchase are non refundable. In case you change your mind, you are able to change the
-            ticket name for 10 euros fee until one week before the event.
-          </p>
-        </div>
+        <div className="px-4 md:px-0 pb-8">
+          <p className="text-neutral-400 pb-2">Organizer</p>
+          <p className="mb-4 text-white">SOB Productions</p>
 
-        <div className="pb-8">
-          <p>Event is organized by: SOB Productions</p>
-          <p>Email: sob.helsinki@gmail.com</p>
+          <p className="text-neutral-400 pb-2">Email</p>
+          <div className="mb-4">
+            <a href="mailto:sob.helsinki@gmail.com" className="font-semibold">
+              sob.helsinki@gmail.com
+            </a>
+          </div>
         </div>
 
         {/* Ticket Tailor embedded code */}
-        <div className="bg-black">
+        <div className="bg-black pb-14">
           <div
             id="someId"
             dangerouslySetInnerHTML={{
