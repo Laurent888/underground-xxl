@@ -41,10 +41,11 @@ export default function Home() {
             <h3 className="text-gray-50 text-3xl md:text-6xl font-bold">1 - 3 SEPTEMBER 2023</h3>
 
             <ul className="py-8 md:py-14">
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Internation teachers</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">7 hours workshops</li>
               <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">1 masterclass</ul>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">2 parties</li>
-              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Taxi dancers</li>
+              {/* <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Taxi dancers</li> */}
             </ul>
             <MainButton text="Agenda" href="/agenda" />
           </div>
@@ -81,7 +82,11 @@ export default function Home() {
         <section className="bg-inherit">
           <div className="container md:mx-auto md:h-96 flex flex-col md:flex-row pb-12">
             <div className="md:w-1/2 h-full">
-              <Image src={SobBanner} alt="crowd" style={{ objectFit: 'cover' }} className="h-full" />
+              <Image
+                src={require('../public/sob_banner.jpeg')}
+                alt="sob banner"
+                className="object-cover h-full w-full"
+              />
             </div>
 
             <AnimatedContainer className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-4 md:px-0">

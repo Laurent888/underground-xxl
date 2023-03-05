@@ -53,7 +53,7 @@ const ArtistDetailsDrawer = ({
         animate={controls}
         dragConstraints={{ right: 0 }}
         onDragEnd={() => {
-          if (x.get() < -80) {
+          if (x.get() < -30) {
             // Close the modal
             onClose()
           } else {
