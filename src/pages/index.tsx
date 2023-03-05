@@ -41,7 +41,7 @@ export default function Home() {
             <h3 className="text-gray-50 text-3xl md:text-6xl font-bold">1 - 3 SEPTEMBER 2023</h3>
 
             <ul className="py-8 md:py-14">
-              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Internation teachers</li>
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">International teachers</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">7 hours workshops</li>
               <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">1 masterclass</ul>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">2 parties</li>
@@ -91,7 +91,7 @@ export default function Home() {
 
             <AnimatedContainer className="md:w-1/2 md:pl-12 pt-8 md:pt-0 px-4 md:px-0">
               <SectionTitle>
-                Summer Outdoor Bachata aka <span className="text-orange-400">SOB</span>
+                Summer Outdoor Bachata aka <span className="text-orange-600">SOB</span>
               </SectionTitle>
               <Body
                 text="This is a dancers community group from Helsinki. Group was created in May 2016 to organize dancing picnics at parks and at the beach. 

@@ -17,7 +17,7 @@ function SectionTitle({
   bottomSpacing = true,
 }: SectionTitleProps) {
   const smallText = 'text-xl md:text-2xl'
-  const normalText = 'text-2xl md:text-6xl'
+  const normalText = 'text-3xl md:text-6xl'
 
   return (
     <h3

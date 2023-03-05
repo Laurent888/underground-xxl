@@ -37,7 +37,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="font-medium text-sm text-center py-4 text-neutral-500">
+      <div className="font-medium text-sm text-center py-4 px-4 text-neutral-600">
         Website and visuals made with 🤍 by Laurent Tram
       </div>
     </div>

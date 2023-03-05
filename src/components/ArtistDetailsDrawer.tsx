@@ -61,7 +61,7 @@ const ArtistDetailsDrawer = ({
           }
         }}
         dragElastic={0}
-        className={`z-50 w-[95%] h-[95%] bg-neutral-900 fixed top-6 md:px-14 overflow-y-auto`}
+        className={`z-50 w-[95%] h-[95%] bg-neutral-900 fixed top-6 md:px-14 overflow-y-auto hideScrollbar`}
       >
         <div className="h-[80px] md:h-[150px] w-full absolute top-0 bg-gradient-to-b from-neutral-800 to-transparent" />
 

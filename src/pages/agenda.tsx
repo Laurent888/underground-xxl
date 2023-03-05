@@ -2,7 +2,6 @@ import HeroImage from '@/components/HeroImage'
 import SectionTitle from '@/components/SectionTitle'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import Image from 'next/image'
-import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 
@@ -22,7 +21,7 @@ export default function Agenda() {
       <HeroImage src={require('../public/gradientBg.jpg')} title="AGENDA" alt="gradient" />
 
       <section className="container mt-12 mx-auto flex flex-col items-center">
-        <p className="mb-12 text-center mx-2">Here is an overview of the agenda. It will be subject to changes</p>
+        <p className="mb-12 text-center mx-2">Here is an overview of the agenda. More details will come later.</p>
 
         <div className="mb-8">
           <SectionTitle bottomSpacing={false} text="Friday" />
