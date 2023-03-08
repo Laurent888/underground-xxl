@@ -1,4 +1,5 @@
 import { GoogleAnalytics } from 'nextjs-google-analytics'
+import { CookiesProvider } from 'react-cookie'
 import Layout from '@/components/Layout'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
@@ -42,11 +43,13 @@ const montserrat = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={montserrat.className}>
-      <GoogleAnalytics trackPageViews gaMeasurementId="G-797GF2JHHZ" />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </main>
+    <CookiesProvider>
+      <main className={montserrat.className}>
+        <GoogleAnalytics trackPageViews gaMeasurementId="G-797GF2JHHZ" />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </main>
+    </CookiesProvider>
   )
 }
