@@ -5,7 +5,6 @@ import SectionTitle from '@/components/SectionTitle'
 import MainButton from '@/components/MainButton'
 
 /** IMAGES */
-import SobBanner from '../public/sob_banner.jpeg'
 import Collage from '../public/Collage.png'
 import Body from '@/components/Body'
 import ArtistScrollview, { ArtistCode } from '@/components/ArtistScrollview'

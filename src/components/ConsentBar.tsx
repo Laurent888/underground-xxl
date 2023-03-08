@@ -28,7 +28,7 @@ const ConsentBar = ({ visible, onAccept, onReject }: ConsentBarProps): JSX.Eleme
           <button className="py-1 px-6 mr-4 border-white border-2 text-white" onClick={onReject}>
             Decline
           </button>
-          <button className="py-1 px-6  border-white border-2 bg-neutral-100" onClick={onAccept}>
+          <button className="py-1 px-6 border-white border-2 bg-neutral-100 text-black" onClick={onAccept}>
             OK
           </button>
         </div>
