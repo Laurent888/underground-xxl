@@ -9,7 +9,7 @@ import FacebookLogo from '@/components/FacebookLogo'
 export default function Contact() {
   return (
     <>
-      <HeroImage title="CONTACT" src={require('../public/sob_banner.jpeg')} alt="sob banner" />
+      <HeroImage title="CONTACT" />
       <div className="container mx-auto  md:h-[700px] flex flex-col md:flex-row py-12 md:py-24 px-4 md:px-0">
         <div className="md:w-1/2 md:pr-12">
           <h3 className="font-bold text-3xl text-white pb-4">Contact</h3>
