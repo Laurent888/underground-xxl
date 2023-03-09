@@ -1,28 +1,13 @@
 import HeroImage from '@/components/HeroImage'
-import Script from 'next/script'
-import { isMobile } from 'react-device-detect'
-import { useEffect, useState } from 'react'
+
 import Body from '@/components/Body'
 import Image from 'next/image'
+import PriceRow from '@/components/PriceRow'
 
 export default function Tickets() {
-  const [showMobileImage, setShowMobileImage] = useState(true)
-
-  useEffect(() => {
-    if (isMobile) {
-      setShowMobileImage(true)
-    } else {
-      setShowMobileImage(false)
-    }
-  }, [])
-
   return (
     <>
-      {showMobileImage ? (
-        <HeroImage src={require('../public/event_poster.jpg')} title="TICKETS" alt="workshop" />
-      ) : (
-        <HeroImage src={require('../public/underground_facebookbanner.png')} title="TICKETS" alt="workshop" />
-      )}
+      <HeroImage title="TICKETS" />
 
       <div className="container mx-auto">
         <section className="px-4 md:px-0 pt-10 pb-6 flex flex-col-reverse md:flex-row">
@@ -62,6 +47,22 @@ export default function Tickets() {
               className="h-full w-full object-contain"
             />
           </div>
+        </section>
+
+        <section className="pb-8 mx-4 md:mx-0">
+          <h2 className="text-4xl md:text-6xl font-extrabold italic pb-8">PRICES</h2>
+
+          <PriceRow showPerson title="Super Early bird Couple Pass" price={154}>
+            <p className="text-neutral-500 text-sm">Only 5 couple passes available!</p>
+          </PriceRow>
+
+          <PriceRow showPerson title="Early bird Couple Pass" price={164}>
+            <p className="text-neutral-500 text-sm">Only 5 couple passes available!</p>
+          </PriceRow>
+
+          <PriceRow title="Early bird Full Pass" price={87}>
+            <p className="text-neutral-500 text-sm">Only until end of April!</p>
+          </PriceRow>
         </section>
 
         {/* Ticket Tailor embedded code */}

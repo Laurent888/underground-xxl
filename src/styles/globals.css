@@ -222,15 +222,13 @@ p,h1,h2,h3,h4,h5,h6 {
   }
 
   .heroTitle {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: white;
-    -webkit-text-fill-color: transparent;
-    font-weight: 900;
-    font-size: 50px;
+    font-size: 35px;
   }
 
   .heroTitleOutline {
-    visibility: hidden;
+    font-size: 35px;
+  -webkit-text-stroke-width: 1px;
+  letter-spacing: 2px;
   }
 }
 
