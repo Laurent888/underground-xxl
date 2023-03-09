@@ -2,23 +2,11 @@ import HeroImage from '@/components/HeroImage'
 import SectionTitle from '@/components/SectionTitle'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
-import { isMobile } from 'react-device-detect'
 
 export default function Agenda() {
-  const [showMobileImage, setShowMobileImage] = useState(true)
-
-  useEffect(() => {
-    if (isMobile) {
-      setShowMobileImage(true)
-    } else {
-      setShowMobileImage(false)
-    }
-  }, [])
-
   return (
     <div className="bg-black">
-      <HeroImage src={require('../public/gradientBg.jpg')} title="AGENDA" alt="gradient" />
+      <HeroImage title="AGENDA" />
 
       <section className="container mt-12 mx-auto flex flex-col items-center">
         <p className="mb-12 text-center mx-2">Here is an overview of the agenda. More details will come later.</p>
