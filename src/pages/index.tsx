@@ -46,7 +46,7 @@ export default function Home() {
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">2 parties</li>
               {/* <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Taxi dancers</li> */}
             </ul>
-            <MainButton text="Agenda" href="/agenda" />
+            <MainButton text="Program" href="/program" />
           </div>
         </div>
 

@@ -3,6 +3,7 @@ import HeroImage from '@/components/HeroImage'
 import Body from '@/components/Body'
 import Image from 'next/image'
 import PriceRow from '@/components/PriceRow'
+import Script from 'next/script'
 
 export default function Tickets() {
   return (
@@ -68,10 +69,10 @@ export default function Tickets() {
         {/* Ticket Tailor embedded code */}
         <section className="px-4 md:px-0 pb-14">
           <h2 className="text-4xl md:text-6xl font-extrabold italic">
-            TICKETS AVAILABLE <span className="text-orange-600">SOON</span>
+            EARLY BIRD TICKETS AVAILABLE <span className="text-orange-600">NOW!</span>
           </h2>
         </section>
-        {/* <section className="bg-black pb-14">
+        <section className="bg-black pb-14">
           <div
             id="someId"
             dangerouslySetInnerHTML={{
@@ -91,7 +92,7 @@ export default function Tickets() {
             data-inline-inherit-ref-from-url-param=""
             data-inline-ref="website_widget"
           />
-        </section> */}
+        </section>
 
         <section className="px-4 md:px-0 pb-14">
           <p className="text-neutral-400 pb-2">Organizer</p>

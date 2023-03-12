@@ -37,9 +37,9 @@ function Navbar({ onMenuOpen }: { onMenuOpen: () => void }) {
           </Link>
 
           <ul className="hidden md:flex flex-row items-center invisible md:visible">
-            <Link href="/agenda">
+            <Link href="/program">
               <li className="text-white font-semibold hover:cursor-pointer py-6 md:py-8 px-6 hover:bg-orange-600 transition duration-250">
-                Agenda
+                Program
               </li>
             </Link>
             {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}

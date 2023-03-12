@@ -3,15 +3,15 @@ import SectionTitle from '@/components/SectionTitle'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import Image from 'next/image'
 
-export default function Agenda() {
+export default function Program() {
   return (
     <div className="bg-black">
-      <HeroImage title="AGENDA" />
+      <HeroImage title="Program" />
 
       <section className="container mt-12 mx-auto flex flex-col items-center">
-        <p className="mb-12 text-center mx-2">Here is an overview of the agenda. More details will come later.</p>
+        <p className="mb-12 text-center mx-2">Here is an overview of the program. More details will come later.</p>
 
-        <div className="mb-8">
+        <div className="mb-8 flex flex-col items-center">
           <SectionTitle bottomSpacing={false} text="Friday" />
           <p className="mt-4">Party until 2am</p>
         </div>

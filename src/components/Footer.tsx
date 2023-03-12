@@ -26,8 +26,8 @@ function Footer() {
           <a href="/tickets">
             <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Tickets</p>
           </a>
-          <Link href="/agenda">
-            <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Agenda</p>
+          <Link href="/program">
+            <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Program</p>
           </Link>
           <Link href="/contact">
             <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
