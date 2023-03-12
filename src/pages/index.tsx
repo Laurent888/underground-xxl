@@ -94,8 +94,7 @@ export default function Home() {
               </SectionTitle>
               <Body
                 bottomSpacing={false}
-                text="This is a dancers community group from Helsinki. Group was created in May 2016 to organize dancing picnics at parks and at the beach. 
-              Members have grown from 10 to 1.3k then nowadays we also arrange indoor events year-round and occasionally bigger events with international artists."
+                text="Summer Outdoor Bachata is a dancers’ community group from Helsinki. It was initially created by a group of bachata enthusiasts to organize dancing picnics at parks and beaches in May 2016. Since then the members have encreased from 10 to 1.3k!  Nowadays we also arrange indoor events year-round and occasionally bigger events with international artists."
               />
 
               <p className="text-center md:text-start">

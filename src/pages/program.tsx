@@ -13,18 +13,18 @@ export default function Program() {
 
         <div className="mb-8 flex flex-col items-center">
           <SectionTitle bottomSpacing={false} text="Friday" />
-          <p className="mt-4">Party until 2am</p>
+          <p className="mt-4">Party from 9 pm to 2am</p>
         </div>
 
         <div className="mb-8 flex flex-col items-center">
           <SectionTitle bottomSpacing={false} text="Saturday" />
-          <p className="mt-4">Workshop from 11 to 17</p>
-          <p>Party from 21 to 3!</p>
+          <p className="mt-4">Workshop from 11am to 5pm</p>
+          <p>Party from 9pm to 3am!</p>
         </div>
 
         <div className="mb-8 flex flex-col items-center">
           <SectionTitle bottomSpacing={false} text="Sunday" />
-          <p className="mt-4">Workshop from 13 to 16</p>
+          <p className="mt-4">Workshop from 1pm to 4pm</p>
         </div>
       </section>
 

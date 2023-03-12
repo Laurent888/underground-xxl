@@ -37,8 +37,8 @@ export default function Tickets() {
             <p className="font-semibold text-neutral-400">Refund policy</p>
             <Body
               mobileLeft
-              text="Please note that all purchase are non refundable. In case you change your mind, you are able to change the
-            ticket name for 10 euros fee until one week before the event."
+              text="Please note that all purchase are non-refundable. In case you change your mind, you are able to change the
+            ticket name on the ticket for a 10 euros fee until one week before the event."
             />
           </div>
           <div className="md:h-[600px] w-full md:w-1/2 md:pl-12 mb-12">
@@ -53,16 +53,16 @@ export default function Tickets() {
         <section className="pb-8 mx-4 md:mx-0">
           <h2 className="text-4xl md:text-6xl font-extrabold italic pb-8">PRICES</h2>
 
-          <PriceRow showPerson title="Super Early bird Couple Pass" price={154}>
+          <PriceRow showPerson title="Super Early Bird Couple Pass" price={154}>
             <p className="text-neutral-500 text-sm">Only 5 couple passes available!</p>
           </PriceRow>
 
-          <PriceRow showPerson title="Early bird Couple Pass" price={164}>
+          <PriceRow showPerson title="Early Bird Couple Pass" price={164}>
             <p className="text-neutral-500 text-sm">Only 5 couple passes available!</p>
           </PriceRow>
 
-          <PriceRow title="Early bird Full Pass" price={87}>
-            <p className="text-neutral-500 text-sm">Only until end of April!</p>
+          <PriceRow title="Early Bird Full Pass" price={87}>
+            <p className="text-neutral-500 text-sm">Available only until end of April!</p>
           </PriceRow>
         </section>
 
