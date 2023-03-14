@@ -9,14 +9,6 @@ type HeroImageProps = {
 const HeroImage = ({ title }: HeroImageProps) => {
   return (
     <div className="relative h-44 md:h-[400px] w-screen">
-      {/* <div className="absolute h-full w-full bg-black opacity-50" /> */}
-      {/* <Image
-        src={src}
-        alt={alt}
-        className="object-cover object-center"
-        loading="eager"
-        style={{ width: '100%', height: '100%' }}
-      /> */}
       <motion.div
         initial={{ translateX: '0px' }}
         animate={{

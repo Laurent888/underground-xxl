@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image'
 import { AiOutlineArrowRight } from 'react-icons/ai'
-import MainButton from './MainButton'
 import TicketButtonNavigation from './TicketButtonNavigation'
 
 const NavigationItem = ({ text }: { text: string }) => {
