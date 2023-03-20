@@ -55,7 +55,8 @@ export default function Tickets() {
 
           <PriceRow showPerson title="Super Early Bird Couple Pass" price={154}>
             <p className="text-neutral-500 text-sm">
-              <span className="line-through">Only 5 couple passes available!</span>{' '}
+              <span className="line-through">Only 5 couple passes available!</span>
+              <br />
               <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
