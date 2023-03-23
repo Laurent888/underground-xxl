@@ -23,14 +23,14 @@ function Hero() {
         <h5 className="font-bold text-white text-left md:pl-1 mb-2">SEP 1 - SEP 3, HELSINKI</h5>
         <AnimatedHeroText text="BIGGER" delay={0.2} />
         <AnimatedHeroText text="BOLDER" delay={0.6} classname="text-orange-500" />
-        <motion.h3
+        <motion.h1
           initial={{ y: 20, opacity: 0, scale: 0.95 }}
           transition={{ delay: 1, bounce: false, ease: 'easeOut', duration: 0.8 }}
           animate={{ y: 0, opacity: 1, scale: 1 }}
           className="text-4xl md:text-6xl lg:text-8xl font-extrabold"
         >
           UNDERGROUND <span className="text-orange-600">XXL</span>
-        </motion.h3>
+        </motion.h1>
 
         <motion.p
           initial={{ x: -20, opacity: 0 }}

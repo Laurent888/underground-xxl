@@ -11,6 +11,7 @@ import ArtistScrollview, { ArtistCode } from '@/components/ArtistScrollview'
 import ArtistDetailsDrawer from '@/components/ArtistDetailsDrawer'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import AnimatedContainer from '@/components/motion/AnimatedContainer'
+import Head from 'next/head'
 
 export default function Home() {
   const [artistCode, setArtistCode] = useState<ArtistCode>('ig')
@@ -26,6 +27,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Underground XXL | Bachata weekend in Helsinki</title>
+      </Head>
       <div className={`bg-black w-screen`}>
         {/* HERO */}
         <Hero />
@@ -42,7 +46,7 @@ export default function Home() {
             <ul className="py-8 md:py-14">
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">International teachers</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">7 hours workshops</li>
-              <ul className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">1 masterclass</ul>
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">1 masterclass</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">2 parties</li>
               {/* <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Taxi dancers</li> */}
             </ul>

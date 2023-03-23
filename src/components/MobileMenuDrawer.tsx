@@ -21,7 +21,7 @@ const MobileMenuDrawer = ({ visible, onClose }: { visible: boolean; onClose: () 
             <NavigationItem text="HOME" />
           </Link>
           <Link href="/program" onClick={onClose}>
-            <NavigationItem text="Program" />
+            <NavigationItem text="PROGRAM" />
           </Link>
           <Link href="/contact" onClick={onClose}>
             <NavigationItem text="CONTACT" />

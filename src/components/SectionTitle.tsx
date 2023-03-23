@@ -20,13 +20,13 @@ function SectionTitle({
   const normalText = 'text-3xl md:text-6xl'
 
   return (
-    <h3
+    <h2
       className={`font-bold md:font-extrabold ${small ? smallText : normalText} uppercase text-center md:text-start ${
         bottomSpacing && 'pb-6 md:pb-8'
       } ${mobileLeft && 'text-start'} ${className}`}
     >
       {children ?? text}
-    </h3>
+    </h2>
   )
 }
 

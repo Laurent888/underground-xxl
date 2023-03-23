@@ -4,10 +4,14 @@ import Body from '@/components/Body'
 import Image from 'next/image'
 import PriceRow from '@/components/PriceRow'
 import Script from 'next/script'
+import Head from 'next/head'
 
 export default function Tickets() {
   return (
     <>
+      <Head>
+        <title>Underground XXL | Bachata weekend in Helsinki | Tickets</title>
+      </Head>
       <HeroImage title="TICKETS" />
 
       <div className="container mx-auto">

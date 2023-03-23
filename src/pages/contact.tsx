@@ -5,10 +5,14 @@ import { SOB_FACEBOOK_URL, SOB_INSTAGRAM_URL } from '@/utils/constants'
 import HeroImage from '@/components/HeroImage'
 import InstagramLogo from '@/components/InstagramLogo'
 import FacebookLogo from '@/components/FacebookLogo'
+import Head from 'next/head'
 
 export default function Contact() {
   return (
     <>
+      <Head>
+        <title>Underground XXL | Bachata weekend in Helsinki | Contact</title>
+      </Head>
       <HeroImage title="CONTACT" />
       <div className="container mx-auto  md:h-[700px] flex flex-col md:flex-row py-12 md:py-24 px-4 md:px-0">
         <div className="md:w-1/2 md:pr-12">
