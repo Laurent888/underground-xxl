@@ -30,10 +30,10 @@ function Footer() {
             <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Program</p>
           </Link>
           <Link href="/contact">
-            <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
+            <p className="hover:cursor-pointer hover:opacity-80 md:mr-4 py-2">Contact</p>
           </Link>
           <Link href="/admin">
-            <p className="hover:cursor-pointer hover:opacity-80  py-2">Admin</p>
+            <p className="hover:cursor-pointer hover:opacity-80 py-2">Admin</p>
           </Link>
 
           <div className="flex flex-row items-center">

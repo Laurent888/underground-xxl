@@ -49,7 +49,7 @@ const Admin = () => {
 
   if (!isAuthorized)
     return (
-      <section className="px-4 py-8">
+      <section className="px-4 py-8 h-screen">
         <h3 className="mb-4">Password</h3>
         <input type="password" onChange={(e) => setIsAuthorized(e.target.value === 'holysquad')} />
       </section>
