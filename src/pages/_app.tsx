@@ -4,6 +4,7 @@ import Layout from '@/components/Layout'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import localFont from '@next/font/local'
+import Head from 'next/head'
 
 const montserrat = localFont({
   src: [
@@ -45,6 +46,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <CookiesProvider>
       <main className={montserrat.className}>
+        <Head>
+          <title>Underground XXL | Bachata weekend in Helsinki</title>
+          <meta name="Underground XXL" content="Bachata weekend, festival in Helsinki, Finland" />
+        </Head>
         <GoogleAnalytics trackPageViews gaMeasurementId="G-797GF2JHHZ" />
         <Layout>
           <Component {...pageProps} />

@@ -27,12 +27,12 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Underground XXL | Bachata weekend in Helsinki</title>
-      </Head>
       <div className={`bg-black w-screen`}>
         {/* HERO */}
         <Hero />
+
+        {/* For SEO */}
+        <h1 className="absolute opacity-0">Underground XXL, the best bachata festival in Helsinki, Finland</h1>
 
         {/* SECTION INFO */}
         <div className="container mx-auto md:h-200 flex flex-col md:flex-row">
@@ -40,7 +40,7 @@ export default function Home() {
             <Image src={Collage} className="h-full w-full bg-black object-cover" alt="collage" />
           </div>
           <div className="w-full md:w-1/2 lg:w-[55%] bg-black p-10 md:py-24 md:px-24">
-            <h5 className="text-gray-50 text-lg md:text-2xl pb-4 font-bold">HELSINKI, FINLAND</h5>
+            <h2 className="text-gray-50 text-lg md:text-2xl pb-4 font-bold">HELSINKI, FINLAND</h2>
             <h3 className="text-gray-50 text-3xl md:text-6xl font-bold">1 - 3 SEPTEMBER 2023</h3>
 
             <ul className="py-8 md:py-14">
