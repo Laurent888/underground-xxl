@@ -18,7 +18,7 @@ function Navbar({ onMenuOpen }: { onMenuOpen: () => void }) {
   }, [isMobile])
 
   return (
-    <nav className="fixed w-full bg-black z-50">
+    <nav className="fixed w-full bg-black/70 z-50 border-b-[1px] border-b-neutral-800 backdrop-blur-lg">
       <div className="md:container md:mx-auto px-2">
         <div className="flex flex-row items-center justify-center md:justify-between">
           <Link href="/" className="justify-center items-center">

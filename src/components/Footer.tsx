@@ -32,6 +32,9 @@ function Footer() {
           <Link href="/contact">
             <p className="hover:cursor-pointer hover:opacity-80  py-2">Contact</p>
           </Link>
+          <Link href="/admin">
+            <p className="hover:cursor-pointer hover:opacity-80  py-2">Admin</p>
+          </Link>
 
           <div className="flex flex-row items-center">
             <Link href={SOB_INSTAGRAM_URL} target="_blank" className="mt-4 md:mt-0 md:ml-8">
