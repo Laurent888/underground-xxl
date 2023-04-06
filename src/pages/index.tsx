@@ -45,7 +45,7 @@ export default function Home() {
 
             <ul className="py-8 md:py-14">
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">International teachers</li>
-              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">7 hours workshops</li>
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">8 hours workshops</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">1 masterclass</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">2 parties</li>
               {/* <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Taxi dancers</li> */}

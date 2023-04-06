@@ -1,5 +1,6 @@
 import IgorRocio from '../public/igorRocio.jpg'
 import CristianGabriella from '../public/cristianGabriella.jpeg'
+import AlexSveti from '../public/alex&sveti.jpg'
 import JordiNoora from '../public/jordiNoora.jpg'
 import LaurentDJ from '../public/laurentTram.jpg'
 import BabakDJ from '../public/djbabak.jpg'
@@ -33,6 +34,15 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     classes: '3 hours class',
     image: CristianGabriella,
     instagram: 'https://www.instagram.com/cristianygabriella/',
+  },
+  as: {
+    code: 'as',
+    name: 'Alex and Sveti',
+    description:
+      'Talented bachata dancers from Greece and Ukraine. Alex and Sveti are certified Bachata Sensual instructors.',
+    classes: '2 hours class',
+    image: AlexSveti,
+    instagram: 'https://www.instagram.com/alexandros_dancer/',
   },
   jn: {
     code: 'jn',

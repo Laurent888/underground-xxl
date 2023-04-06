@@ -30,6 +30,7 @@ export default function Tickets() {
             <ul>
               <li className="pb-2">🌟 Igor and Rocio (2h)</li>
               <li className="pb-2">🌟 Cristian and Gabriella (3h)</li>
+              <li className="pb-2">🌟 Alex and Sveti (2h)</li>
               <li className="pb-2">🌟 Jordi and Noora (2h)</li>
             </ul>
 
