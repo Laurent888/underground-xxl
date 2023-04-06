@@ -10,6 +10,10 @@ import FacebookLogo from './FacebookLogo'
 function Footer() {
   return (
     <div className="bg-black border-t-2 border-t-gray-900 ">
+      <h1 className="absolute opacity-0">
+        Underground XXL | UndergroundXXL | Bachata Helsinki | Finland | Sensual Bachata
+      </h1>
+
       <div className="py-8 container mx-auto flex flex-col items-center md:flex-row md:justify-between md:items-center">
         <div className="flex flex-col items-center">
           <div className="w-20 h-20 mb-4">
