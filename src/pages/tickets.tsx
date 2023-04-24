@@ -21,9 +21,7 @@ export default function Tickets() {
             <ul>
               <li className="pb-2">🔸 Access to all workshops except the masterclass</li>
               <li className="pb-2">🔸 Friday and Saturday parties</li>
-              <li className="pb-2">
-                🔸 30% off for dancers living outside of Finland. Send an message for discount code.
-              </li>
+              <li className="pb-2">🔸 30% off for dancers living outside of Finland. Use the discount code 'HFUUJK'</li>
             </ul>
 
             <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
@@ -67,11 +65,11 @@ export default function Tickets() {
           </PriceRow>
 
           <PriceRow showPerson title="Early Bird Couple Pass" price={164}>
-            <p className="text-neutral-500 text-sm">Only 5 couple passes available!</p>
+            <p className="text-neutral-500 text-sm">Available only until May 15th!</p>
           </PriceRow>
 
           <PriceRow title="Early Bird Full Pass" price={87}>
-            <p className="text-neutral-500 text-sm">Available only until end of April!</p>
+            <p className="text-neutral-500 text-sm">Available only until May 15th!</p>
           </PriceRow>
         </section>
 
