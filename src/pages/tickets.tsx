@@ -21,7 +21,9 @@ export default function Tickets() {
             <ul>
               <li className="pb-2">🔸 Access to all workshops except the masterclass</li>
               <li className="pb-2">🔸 Friday and Saturday parties</li>
-              <li className="pb-2">🔸 30% off for dancers living outside of Finland. Use the discount code 'HFUUJK'</li>
+              <li className="pb-2">
+                🔸 30% off for dancers living outside of Finland. Use the discount code &quot;HFUUJK&quot;
+              </li>
             </ul>
 
             <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
