@@ -65,18 +65,34 @@ export default function Tickets() {
           </PriceRow>
 
           <PriceRow showPerson title="Early Bird Couple Pass" price={164}>
-            <p className="text-neutral-500 text-sm">Available only until May 15th!</p>
+            <p className="text-neutral-500 text-sm">
+              <span className="line-through">Available only until May 15th!</span>
+              <br />
+              <span className="font-bold text-red-500">SOLD OUT!</span>
+            </p>
           </PriceRow>
 
           <PriceRow title="Early Bird Full Pass" price={87}>
-            <p className="text-neutral-500 text-sm">Available only until May 15th!</p>
+            <p className="text-neutral-500 text-sm">
+              <span className="line-through">Available only until May 15th!</span>
+              <br />
+              <span className="font-bold text-red-500">SOLD OUT!</span>
+            </p>
+          </PriceRow>
+
+          <PriceRow title="Full Pass Leader/Follower" price={95}>
+            <p className="text-neutral-500 text-sm">Get 30% off if you come from abroad!</p>
+          </PriceRow>
+
+          <PriceRow showPerson title="Couple Pass Leader/Follower" price={180}>
+            <p className="text-neutral-500 text-sm">Get 30% off if you come from abroad!</p>
           </PriceRow>
         </section>
 
         {/* Ticket Tailor embedded code */}
         <section className="px-4 md:px-0 pb-14">
           <h2 className="text-4xl md:text-6xl font-extrabold italic">
-            EARLY BIRD TICKETS AVAILABLE <span className="text-orange-600">NOW!</span>
+            TICKETS AVAILABLE <span className="text-orange-600">NOW!</span>
           </h2>
         </section>
         <section className="bg-black pb-14">
