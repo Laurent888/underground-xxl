@@ -11,7 +11,6 @@ import ArtistScrollview, { ArtistCode } from '@/components/ArtistScrollview'
 import ArtistDetailsDrawer from '@/components/ArtistDetailsDrawer'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import AnimatedContainer from '@/components/motion/AnimatedContainer'
-import Head from 'next/head'
 
 export default function Home() {
   const [artistCode, setArtistCode] = useState<ArtistCode>('ig')
@@ -45,10 +44,10 @@ export default function Home() {
 
             <ul className="py-8 md:py-14">
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">International teachers</li>
-              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">8 hours workshops</li>
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">9 hours workshops</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">1 masterclass</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">2 parties</li>
-              {/* <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Taxi dancers</li> */}
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Guest dancers from Europe</li>
             </ul>
             <MainButton text="Program" href="/program" />
           </div>
@@ -61,6 +60,30 @@ export default function Home() {
             setShowDrawer(true)
           }}
         />
+
+        {/* VENUE */}
+        <section className="bg-inherit">
+          <div className="container md:mx-auto flex flex-col md:flex-row pb-12">
+            <AnimatedContainer className="md:w-1/2 md:pr-12 pt-8 md:pt-0 px-4 md:px-0">
+              <SectionTitle>VENUE</SectionTitle>
+              <Body
+                bottomSpacing={false}
+                text="Workshops and parties will be hosted at a beautiful dance studio conveniently situated near the city
+                center. Participants will have the pleasure of experiencing a spacious 200m2 wooden floor, ideal for optimal
+                dancing. Kindly note that the usage of indoor shoes is mandatory for this venue."
+              />
+              <Body bottomSpacing={false} text="Address: Tallberginkatu 1 D, 00180 Helsinki" />
+            </AnimatedContainer>
+
+            <div className="md:w-8/12 h-1/2 overflow-hidden">
+              <Image
+                src={require('../public/balanssi-studio.jpeg')}
+                alt="Balanssi Studio"
+                className="object-cover h-[300px] md:h-[500px] w-full"
+              />
+            </div>
+          </div>
+        </section>
 
         {/* CALL TO ACTION */}
         <section className="pb-24">

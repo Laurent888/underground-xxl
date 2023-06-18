@@ -31,7 +31,8 @@ export default function Tickets() {
               <li className="pb-2">🌟 Igor and Rocio (2h)</li>
               <li className="pb-2">🌟 Cristian and Gabriella (3h)</li>
               <li className="pb-2">🌟 Alex and Sveti (2h)</li>
-              <li className="pb-2">🌟 Jordi and Noora (2h)</li>
+              <li className="pb-2">🌟 Hasan (1h)</li>
+              <li className="pb-2">🌟 Jordi and Noora (1h)</li>
             </ul>
 
             <h5 className="font-bold text-xl md:text-2xl pb-6 mt-6">Not included in Full pass:</h5>
