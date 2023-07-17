@@ -97,6 +97,10 @@ export default function Tickets() {
           <PriceRow showPerson title="Couple Pass Leader/Follower" price={180}>
             <p className="text-neutral-500 text-sm">Get 30% off if you come from abroad!</p>
           </PriceRow>
+
+          <PriceRow showPerson title="Party Pass" price={40}>
+            <p className="text-neutral-500 text-sm">Access to friday, saturday and sunday parties</p>
+          </PriceRow>
         </section>
 
         {/* Ticket Tailor embedded code */}
