@@ -20,7 +20,7 @@ export default function Tickets() {
             <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
             <ul>
               <li className="pb-2">🔸 Access to all workshops except the masterclass</li>
-              <li className="pb-2">🔸 Friday and Saturday parties</li>
+              <li className="pb-2">🔸 Friday, Saturday and Sunday parties</li>
               <li className="pb-2">
                 🔸 30% off for dancers living outside of Finland. Use the discount code &quot;HFUUJK&quot;
               </li>
@@ -89,13 +89,14 @@ export default function Tickets() {
 
           <PriceRow title="Full Pass Follower" price={95}>
             <p className="text-neutral-500 text-sm">
-              <span className="text-red-500 font-semibold">CLOSED: </span>Follower Pass closed temporarily until we get
-              more leaders signing up. This is to keep a balance ratio between followers and leaders 🙏
+              <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
           <PriceRow showPerson title="Couple Pass Leader/Follower" price={180}>
-            <p className="text-neutral-500 text-sm">Get 30% off if you come from abroad!</p>
+            <p className="text-neutral-500 text-sm">
+              <span className="font-bold text-red-500">SOLD OUT!</span>
+            </p>
           </PriceRow>
 
           <PriceRow title="Party Pass" price={40}>

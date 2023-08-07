@@ -38,8 +38,8 @@ function Hero() {
           animate={{ x: 0, opacity: 1 }}
           className="text-lg text-white font-medium mt-8 pr-6"
         >
-          Workshops with international teachers, two nights of parties. It is time to bring the Underground to the next
-          level!
+          Workshops with international teachers, three nights of parties. It is time to bring the Underground to the
+          next level!
         </motion.p>
       </div>
     </div>
