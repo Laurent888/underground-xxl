@@ -9,7 +9,7 @@ export default function Program() {
       <HeroImage title="Program" />
 
       <section className="container mt-12 mx-auto flex flex-col items-center">
-        <p className="mb-12 text-center mx-2">Here is an overview of the program. More details will come later.</p>
+        <p className="mb-12 text-center mx-2">Here is an overview of the program.</p>
 
         <div className="mb-8 flex flex-col items-center">
           <SectionTitle bottomSpacing={false} text="Friday" />
@@ -25,6 +25,7 @@ export default function Program() {
         <div className="mb-8 flex flex-col items-center">
           <SectionTitle bottomSpacing={false} text="Sunday" />
           <p className="mt-4">Workshop from 1pm to 4pm</p>
+          <p>Party from 8pm to midnight!</p>
         </div>
       </section>
 
