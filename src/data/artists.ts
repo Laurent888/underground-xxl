@@ -4,6 +4,7 @@ import AlexSveti from '../public/alex&sveti.jpg'
 import JordiNoora from '../public/jordiNoora.jpg'
 import LaurentDJ from '../public/laurentTram.jpg'
 import BabakDJ from '../public/djbabak.jpg'
+import Hasan from '../public/Hasan.jpg'
 import { ArtistCode } from '@/components/ArtistScrollview'
 import { StaticImageData } from 'next/image'
 
@@ -43,6 +44,15 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     classes: '2 hours class',
     image: AlexSveti,
     instagram: 'https://www.instagram.com/alexandros_dancer/',
+  },
+  ha: {
+    code: 'ha',
+    name: 'Hasan',
+    description:
+      "Hasan is a dancer and teacher from Turkey. He's currently based in Vilnius, Lithuania. You will see him in many international festivals. He taught already once at the Underground, and we wanted to bring him back!",
+    image: Hasan,
+    classes: '1 hour class',
+    instagram: 'https://www.instagram.com/hasan.dance/',
   },
   jn: {
     code: 'jn',

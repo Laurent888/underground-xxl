@@ -11,7 +11,7 @@ import { artistsData } from '@/data/artists'
 
 const CARD_WIDTH = isMobile ? 348 : 480
 
-export type ArtistCode = 'ig' | 'cg' | 'as' | 'jn' | 'lt' | 'bm'
+export type ArtistCode = 'ig' | 'cg' | 'as' | 'jn' | 'lt' | 'bm' | 'ha'
 
 type ArtistScrollviewProps = {
   onClick: (artistsCode: ArtistCode) => void
@@ -96,9 +96,9 @@ const ArtistScrollview = ({ onClick }: ArtistScrollviewProps): JSX.Element => {
           type="right"
           onClick={() => {
             if (isMobile) {
-              if (scrollIndex < 5) setScrollIndex((prev) => prev + 1)
+              if (scrollIndex < 6) setScrollIndex((prev) => prev + 1)
             } else {
-              if (scrollIndex < 2) setScrollIndex((prev) => prev + 1)
+              if (scrollIndex < 3) setScrollIndex((prev) => prev + 1)
             }
           }}
         />

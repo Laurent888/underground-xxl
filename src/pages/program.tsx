@@ -2,6 +2,7 @@ import HeroImage from '@/components/HeroImage'
 import SectionTitle from '@/components/SectionTitle'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import Image from 'next/image'
+import Schedule from '../public/Schedule.jpg'
 
 export default function Program() {
   return (
@@ -9,23 +10,11 @@ export default function Program() {
       <HeroImage title="Program" />
 
       <section className="container mt-12 mx-auto flex flex-col items-center">
-        <p className="mb-12 text-center mx-2">Here is an overview of the program.</p>
+        <p className="mb-2 text-center mx-2">Here is an details of the program.</p>
+        <p className="mb-12 text-center mx-2">Program can be subject to change</p>
 
-        <div className="mb-8 flex flex-col items-center">
-          <SectionTitle bottomSpacing={false} text="Friday" />
-          <p className="mt-4">Party from 9 pm to 2am</p>
-        </div>
-
-        <div className="mb-8 flex flex-col items-center">
-          <SectionTitle bottomSpacing={false} text="Saturday" />
-          <p className="mt-4">Workshop from 11am to 5pm</p>
-          <p>Party from 9pm to 3am!</p>
-        </div>
-
-        <div className="mb-8 flex flex-col items-center">
-          <SectionTitle bottomSpacing={false} text="Sunday" />
-          <p className="mt-4">Workshop from 1pm to 4pm</p>
-          <p>Party from 8pm to midnight!</p>
+        <div>
+          <Image src={Schedule} alt="program" className="w-full" />
         </div>
       </section>
 
