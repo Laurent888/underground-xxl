@@ -49,6 +49,12 @@ function Navbar({ onMenuOpen }: { onMenuOpen: () => void }) {
               </li>
             </a>
 
+            <Link href="/venue">
+              <li className="text-white font-semibold hover:cursor-pointer py-6 md:py-8 px-6 hover:bg-orange-600 transition duration-250">
+                Venue
+              </li>
+            </Link>
+
             <Link href="/contact">
               <li className="text-white font-semibold hover:cursor-pointer py-6 md:py-8 px-6 hover:bg-orange-600 transition duration-250">
                 Contacts

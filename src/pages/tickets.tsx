@@ -44,7 +44,7 @@ export default function Tickets() {
             <Body
               mobileLeft
               text="Please note that all purchase are non-refundable. In case you change your mind, you are able to change the
-            ticket name on the ticket for a 10 euros fee until one week before the event."
+            ticket name on the ticket for a 5 euros fee until one week before the event."
             />
           </div>
           <div className="md:h-[600px] w-full md:w-1/2 md:pl-12 mb-12">
@@ -84,7 +84,9 @@ export default function Tickets() {
           </PriceRow>
 
           <PriceRow title="Full Pass Leader" price={95}>
-            <p className="text-neutral-500 text-sm">Get 30% off if you come from abroad!</p>
+            <p className="text-neutral-500 text-sm">
+              <span className="font-bold text-red-500">SOLD OUT!</span>
+            </p>
           </PriceRow>
 
           <PriceRow title="Full Pass Follower" price={95}>
@@ -130,6 +132,26 @@ export default function Tickets() {
             data-inline-inherit-ref-from-url-param=""
             data-inline-ref="website_widget"
           />
+        </section>
+
+        <section className="pb-14">
+          <h5 className="font-bold text-xl md:text-2xl pb-4">Tickets at the door</h5>
+          <p>
+            You can buy directly a ticket for the bachata social at the door. Please note that we{' '}
+            <span className="font-bold">only accept cash!</span>
+          </p>
+          <h5 className="font-bold py-4 text-lg">Door rates:</h5>
+          <PriceRow title="Friday party" price={15}>
+            <p className="text-neutral-500 text-sm">Social from 21:00 to 02:00.</p>
+          </PriceRow>
+
+          <PriceRow title="Saturday party" price={20}>
+            <p className="text-neutral-500 text-sm">Social from 21:30 to 03:00.</p>
+          </PriceRow>
+
+          <PriceRow title="Sunday party" price={10}>
+            <p className="text-neutral-500 text-sm">Social from 20:00 to 00:00.</p>
+          </PriceRow>
         </section>
 
         <section className="px-4 md:px-0 pb-14">
