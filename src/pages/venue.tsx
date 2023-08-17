@@ -25,11 +25,19 @@ export default function Venue() {
             the heart of Helsinki within a mere 15 minutes.
           </p>
 
-          <ImageGallery image={Map} />
+          <div className="w-full h-[250px] md:w-[600px] md:h-[400px]">
+            <Image src={Map} alt="Kaappeli" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+          </div>
 
           <h3 className="font-bold mt-10 mb-2 text-2xl">Direction</h3>
           <p>Door D (as shown in the photo below)</p>
           <p>4th floor</p>
+
+          <h3 className="font-bold mt-10 mb-2 text-2xl text-red-500">BEWARE</h3>
+          <p className="font-bold">This is a dance studio, so clean indoor shoes are mandatory!</p>
+
+          <h3 className="font-bold mt-10 mb-2 text-2xl">Recommended hotel</h3>
+          <p>Holiday Inn West Ruoholahti (450m from the event venue)</p>
         </section>
 
         <section>
