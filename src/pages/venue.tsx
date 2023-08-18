@@ -19,21 +19,24 @@ export default function Venue() {
       <div className="container mx-auto">
         <section className="mb-12 px-4">
           <h1 className="text-4xl md:text-6xl font-extrabold italic pb-8">Location</h1>
-          <p className="pb-4">
+          <p className="pb-8">
             Located on the 4th floor of an old cable factory, our dance studio features a spacious 200m2 wooden floor.
             Conveniently situated just a 10-minute walk from both the Tram and Metro station, you can effortlessly reach
             the heart of Helsinki within a mere 15 minutes.
           </p>
 
-          <div className="w-full h-[250px] md:w-[600px] md:h-[400px]">
-            <Image src={Map} alt="Kaappeli" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+          <div>
+            <h5 className="pb-2">Itinary from metro station to the venue (8min walk)</h5>
+            <div className="w-full h-[250px] md:w-[600px] md:h-[400px]">
+              <Image src={Map} alt="Kaappeli" style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+            </div>
           </div>
 
-          <h3 className="font-bold mt-10 mb-2 text-2xl">Direction</h3>
+          <h3 className="font-bold mt-10 mb-2 text-2xl">In the courtyard</h3>
           <p>Door D (as shown in the photo below)</p>
           <p>4th floor</p>
 
-          <h3 className="font-bold mt-10 mb-2 text-2xl text-red-500">BEWARE</h3>
+          <h3 className="font-bold mt-10 mb-2 text-2xl text-red-500">IMPORTANT</h3>
           <p className="font-bold">This is a dance studio, so clean indoor shoes are mandatory!</p>
 
           <h3 className="font-bold mt-10 mb-2 text-2xl">Recommended hotel</h3>

@@ -9,11 +9,19 @@ export default function Program() {
     <div className="bg-black">
       <HeroImage title="Program" />
 
-      <section className="container mt-12 mx-auto flex flex-col items-center">
-        <p className="mb-2 text-center mx-2">Here is an details of the program.</p>
-        <p className="mb-12 text-center mx-2">Program can be subject to change</p>
+      <section className="container mt-12 mb-24 mx-auto flex flex-col items-center md:items-start mb-12">
+        <h3 className="text-3xl font-bold italic mb-1 text-center mx-2">PROGRAM DETAILS</h3>
+        <p className="mb-12 text-center mx-2 text-stone-500">Program can be subject to change</p>
 
-        <div>
+        <div className="mb-12">
+          <p className="mb-2">• Registration open on friday at 18:30, and on saturday at 10:30</p>
+          <p className="mb-2">
+            • If you are registered for the masterclass, please bring cash for the payment (20 EUR)
+          </p>
+          <p className="mb-2">• Party Pass holder also have access to the Day social on sunday</p>
+        </div>
+
+        <div className="items-center md:w-1/2">
           <Image src={Schedule} alt="program" className="w-full" />
         </div>
       </section>
