@@ -15,6 +15,7 @@ export default function Program() {
 
         <div className="mb-12 px-4">
           <p className="mb-2">• Registration open on friday at 18:30, and on saturday at 10:30</p>
+          <p className="mb-2">• Please bring an ID for the registration.</p>
           <p className="mb-2">
             • If you are registered for the masterclass, please bring cash for the payment (20 EUR)
           </p>
@@ -25,7 +26,7 @@ export default function Program() {
           </p>
           <p className="mb-2">
             • ATTENTION! Sunday workshop and parties will be in Helsinki Dance Central (8min walk from metro station
-            Sörnainen)
+            Sörnainen) Address: Sörnäisten rantatie 33C, 00500 Helsinki
           </p>
         </div>
 
