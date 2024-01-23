@@ -67,7 +67,11 @@ const ArtistDetailsDrawer = ({
 
         <div className="flex flex-col md:flex-row h-full">
           <div className="relative w-full md:w-1/2 h-1/2 md:h-full">
-            <Image src={artist.image} alt={artist.name} className="object-cover object-top w-full h-full" />
+            <Image
+              src={artist.imageAlternative ?? artist.image}
+              alt={artist.name}
+              className="object-cover object-top w-full h-full"
+            />
             <div className="h-[80px] md:h-[150px] w-full absolute top-0 bg-gradient-to-b from-neutral-800 to-transparent" />
           </div>
 

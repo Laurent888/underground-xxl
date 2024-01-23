@@ -1,6 +1,8 @@
 import CristianGabriella from '../public/cristianGabriella.jpg'
+import CristianGabriella2 from '../public/cristianGabriella2.jpg'
 import SergioAna from '../public/sergioAna.jpeg'
 import JorgeAroa from '../public/jorgeAroa.jpeg'
+import JorgeAroa2 from '../public/jorgeAroa2.jpeg'
 import JordiNoora from '../public/jordiNoora.jpg'
 import LaurentDJ from '../public/laurentTram.jpg'
 import BabakDJ from '../public/djbabak.jpg'
@@ -14,6 +16,7 @@ type ArtistData = {
   description: string
   classes?: string
   image: StaticImageData
+  imageAlternative?: StaticImageData
   instagram?: string
 }
 
@@ -34,6 +37,7 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
       'Two beautiful dancers from Sevilla and Cadiz, Cristian and Gabriella will impress you with their smoothness and precision. Checkout their Instagram so you will understand why we wanted absolutely to bring them!',
     classes: 'TBD',
     image: CristianGabriella,
+    imageAlternative: CristianGabriella2,
     instagram: 'https://www.instagram.com/cristianygabriella/',
   },
   ja: {
@@ -43,6 +47,7 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
       'Talented bachata dancers with sensual style from Cadiz. They are the rising stars of the bachata scene in Spain!',
     classes: 'TBD',
     image: JorgeAroa,
+    imageAlternative: JorgeAroa2,
     instagram: 'https://www.instagram.com/jorgeyaroabachata/',
   },
   ha: {

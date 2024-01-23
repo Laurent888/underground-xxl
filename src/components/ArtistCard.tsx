@@ -11,7 +11,7 @@ type ArtistCardProsp = {
 
 function ArtistCard({ source, alt, name, onClick }: ArtistCardProsp) {
   return (
-    <div className="relative artistCardContainer mr-2 md:mr-8" onClick={onClick}>
+    <div className="relative artistCardContainer mr-2 md:mr-[32px]" onClick={onClick}>
       <div className="artistCard ">
         <Image
           src={source}
