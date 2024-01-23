@@ -1,5 +1,4 @@
 import HeroImage from '@/components/HeroImage'
-import SectionTitle from '@/components/SectionTitle'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import Image from 'next/image'
 import Schedule from '../public/Schedule.jpg'
@@ -9,7 +8,11 @@ export default function Program() {
     <div className="bg-black">
       <HeroImage title="Program" />
 
-      <section className="container mt-12 mx-auto flex flex-col items-center md:items-start mb-12">
+      <section className="container mx-auto pb-24">
+        <h1 className="text-4xl font-bold">COMING SOON</h1>
+      </section>
+
+      <section className="container mt-12 mx-auto flex flex-col items-center md:items-start mb-12 hidden">
         <h3 className="text-3xl font-bold italic mb-1 text-center mx-2">PROGRAM DETAILS</h3>
         <p className="mb-12 text-center mx-2 text-stone-500">Program can be subject to change</p>
 
@@ -35,7 +38,7 @@ export default function Program() {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-8">
+      <section className="container mx-auto px-4 py-8 hidden">
         <h3 className="font-extrabold italic uppercase pb-10 text-white text-4xl md:text-6xl">
           No ticket yet? We are waiting for <span className="text-orange-600">you</span>!
         </h3>

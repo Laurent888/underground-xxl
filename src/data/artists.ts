@@ -1,6 +1,6 @@
-import IgorRocio from '../public/igorRocio.jpg'
-import CristianGabriella from '../public/cristianGabriella.jpeg'
-import AlexSveti from '../public/alex&sveti.jpg'
+import CristianGabriella from '../public/cristianGabriella.jpg'
+import SergioAna from '../public/sergioAna.jpeg'
+import JorgeAroa from '../public/jorgeAroa.jpeg'
 import JordiNoora from '../public/jordiNoora.jpg'
 import LaurentDJ from '../public/laurentTram.jpg'
 import BabakDJ from '../public/djbabak.jpg'
@@ -18,32 +18,32 @@ type ArtistData = {
 }
 
 export const artistsData: Record<ArtistCode, ArtistData> = {
-  ig: {
-    code: 'ig',
-    name: 'Igor and Rocio',
+  sa: {
+    code: 'sa',
+    name: 'Sergio and Ana',
     description:
-      'Amazing bachata dancers with lots of energy. Igor and Rocio have been dancing together since 2016 and currently invited in all major bachata festivals around the world. They currently teach in Santander, Spain.',
-    classes: '2 hours class + 1 hour masterclass',
-    image: IgorRocio,
-    instagram: 'https://www.instagram.com/igoryrocio/',
+      'Amazing bachata dancers from Spain. Their style is characterized by their smoothness and sensuality. They have been teaching all around the world and we are very happy to have them in Helsinki!',
+    classes: 'TBD',
+    image: SergioAna,
+    instagram: 'https://www.instagram.com/sergioyanaoficial/',
   },
   cg: {
     code: 'cg',
     name: 'Cristian and Gabriella',
     description:
       'Two beautiful dancers from Sevilla and Cadiz, Cristian and Gabriella will impress you with their smoothness and precision. Checkout their Instagram so you will understand why we wanted absolutely to bring them!',
-    classes: '3 hours class',
+    classes: 'TBD',
     image: CristianGabriella,
     instagram: 'https://www.instagram.com/cristianygabriella/',
   },
-  as: {
-    code: 'as',
-    name: 'Alex and Sveti',
+  ja: {
+    code: 'ja',
+    name: 'Jorge and Aroa',
     description:
-      'Talented bachata dancers from Greece and Ukraine. Alex and Sveti are certified Bachata Sensual instructors.',
-    classes: '2 hours class',
-    image: AlexSveti,
-    instagram: 'https://www.instagram.com/alexandros_dancer/',
+      'Talented bachata dancers with sensual style from Cadiz. They are the rising stars of the bachata scene in Spain!',
+    classes: 'TBD',
+    image: JorgeAroa,
+    instagram: 'https://www.instagram.com/jorgeyaroabachata/',
   },
   ha: {
     code: 'ha',

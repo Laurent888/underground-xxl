@@ -20,7 +20,7 @@ function Hero() {
         <source src="/heroVideo.mp4" type="video/mp4" />
       </video>
       <div className="absolute top-12 left-8 md:bottom-1/3 md:left-32">
-        <h5 className="font-bold text-white text-left md:pl-1 mb-2">SEP 1 - SEP 3, HELSINKI</h5>
+        <h5 className="font-bold text-white text-left md:pl-1 mb-2">SEP 13 - SEP 15, HELSINKI</h5>
         <AnimatedHeroText text="BIGGER" delay={0.2} />
         <AnimatedHeroText text="BOLDER" delay={0.6} classname="text-orange-500" />
         <motion.h1
@@ -38,8 +38,7 @@ function Hero() {
           animate={{ x: 0, opacity: 1 }}
           className="text-lg text-white font-medium mt-8 pr-6"
         >
-          Workshops with international teachers, three nights of parties. It is time to bring the Underground to the
-          next level!
+          2nd edition of the Bachata Underground XXL! Workshops with international teachers, three nights of parties!
         </motion.p>
       </div>
     </div>

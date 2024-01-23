@@ -21,7 +21,7 @@ const ArtistDetailsDrawer = ({
   code: ArtistCode
   onClose: () => void
 }): JSX.Element => {
-  const [artist, setArtist] = useState(artistsData.ig)
+  const [artist, setArtist] = useState(artistsData.sa)
   const x = useMotionValue(-2000)
   const controls = useAnimation()
 

@@ -13,7 +13,7 @@ import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import AnimatedContainer from '@/components/motion/AnimatedContainer'
 
 export default function Home() {
-  const [artistCode, setArtistCode] = useState<ArtistCode>('ig')
+  const [artistCode, setArtistCode] = useState<ArtistCode>('sa')
   const [showDrawer, setShowDrawer] = useState(false)
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 lg:w-[55%] bg-black p-10 md:py-24 md:px-24">
             <h2 className="text-gray-50 text-lg md:text-2xl pb-4 font-bold">HELSINKI, FINLAND</h2>
-            <h3 className="text-gray-50 text-3xl md:text-6xl font-bold">1 - 3 SEPTEMBER 2023</h3>
+            <h3 className="text-gray-50 text-3xl md:text-6xl font-bold">13 - 15 SEPTEMBER 2024</h3>
 
             <ul className="py-8 md:py-14">
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">International teachers</li>

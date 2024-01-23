@@ -14,7 +14,11 @@ export default function Tickets() {
       </Head>
       <HeroImage title="TICKETS" />
 
-      <div className="container mx-auto">
+      <div className="container mx-auto pb-24">
+        <h1 className="text-4xl font-bold">COMING SOON</h1>
+      </div>
+
+      <div className="container mx-auto hidden">
         <section className="px-4 md:px-0 pt-10 pb-6 flex flex-col-reverse md:flex-row">
           <div className="w-full md:w-1/2 ">
             <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
