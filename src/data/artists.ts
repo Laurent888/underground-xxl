@@ -56,7 +56,7 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
   },
   ha: {
     code: 'ha',
-    name: 'Hasan',
+    name: 'Hasan and Justina',
     description:
       "Hasan is a dancer and teacher from Turkey. He's currently based in Vilnius, Lithuania. You will see him in many international festivals. He taught already once at the Underground, and we wanted to bring him back!",
     image: Hasan,
