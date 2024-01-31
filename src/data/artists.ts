@@ -1,12 +1,15 @@
 import CristianGabriella from '../public/cristianGabriella.jpg'
 import CristianGabriella2 from '../public/cristianGabriella2.jpg'
 import SergioAna from '../public/sergioAna.jpeg'
-import JorgeAroa from '../public/jorgeAroa.jpeg'
+import SergioAna2 from '../public/sergioAna2.jpg'
+import JorgeAroa from '../public/jorgeAroa.jpg'
 import JorgeAroa2 from '../public/jorgeAroa2.jpeg'
 import JordiNoora from '../public/jordiNoora.jpg'
 import LaurentDJ from '../public/laurentTram.jpg'
+import LaurentDJ2 from '../public/laurentTram2.jpg'
 import BabakDJ from '../public/djbabak.jpg'
-import Hasan from '../public/Hasan.jpg'
+import Hasan from '../public/HasanJustina.jpg'
+import Hasan2 from '../public/HasanJustina2.jpg'
 import { ArtistCode } from '@/components/ArtistScrollview'
 import { StaticImageData } from 'next/image'
 
@@ -28,6 +31,7 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
       'Amazing bachata dancers from Spain. Their style is characterized by their smoothness and sensuality. They have been teaching all around the world and we are very happy to have them in Helsinki!',
     classes: 'TBD',
     image: SergioAna,
+    imageAlternative: SergioAna2,
     instagram: 'https://www.instagram.com/sergioyanaoficial/',
   },
   cg: {
@@ -56,7 +60,8 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     description:
       "Hasan is a dancer and teacher from Turkey. He's currently based in Vilnius, Lithuania. You will see him in many international festivals. He taught already once at the Underground, and we wanted to bring him back!",
     image: Hasan,
-    classes: '1 hour class',
+    imageAlternative: Hasan2,
+    classes: 'TBD',
     instagram: 'https://www.instagram.com/hasan.dance/',
   },
   jn: {
@@ -72,7 +77,8 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     name: 'DJ Laurent',
     description:
       'One of the Underground resident DJ in Helsinki. He has been dancing bachata for 6 years and is also teaching at Bongos, Helsinki.',
-    image: LaurentDJ,
+    image: LaurentDJ2,
+    imageAlternative: LaurentDJ,
   },
   bm: {
     code: 'bm',
