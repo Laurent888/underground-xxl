@@ -38,7 +38,7 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     code: 'cg',
     name: 'Cristian and Gabriella',
     description:
-      'Two beautiful dancers from Sevilla and Cadiz, Cristian and Gabriella will impress you with their smoothness and precision. Checkout their Instagram so you will understand why we wanted absolutely to bring them!',
+      'We had to invite them again for this 2nd edition! Two beautiful dancers from Sevilla and Cadiz, Cristian and Gabriella will impress you with their smoothness and precision. Checkout their Instagram so you will understand why we wanted absolutely to bring them!',
     classes: 'TBD',
     image: CristianGabriella,
     imageAlternative: CristianGabriella2,
@@ -76,7 +76,7 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     code: 'lt',
     name: 'DJ Laurent',
     description:
-      'One of the Underground resident DJ in Helsinki. He has been dancing bachata for 6 years and is also teaching at Bongos, Helsinki.',
+      'One of the Underground resident DJ in Helsinki. He has been dancing bachata for 8 years and is also teaching at Bongos, Helsinki.',
     image: LaurentDJ2,
     imageAlternative: LaurentDJ,
   },
@@ -84,7 +84,7 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     code: 'bm',
     name: 'DJ Babak',
     description:
-      'One of the Underground resident DJ in Helsinki. You will also see him on the dancefloor since he has been dancing for several years.',
+      'One of the Underground resident DJ in Helsinki. Babak is an experienced bachata DJ and is invited in many events in Finland!',
     image: BabakDJ,
   },
 }
