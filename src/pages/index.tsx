@@ -34,22 +34,23 @@ export default function Home() {
         <h1 className="absolute opacity-0">Underground XXL, the best bachata festival in Helsinki, Finland</h1>
 
         {/* SECTION INFO */}
-        <div className="container mx-auto md:h-200 flex flex-col md:flex-row">
+        <div className="container mx-auto md:h-200 flex flex-col md:flex-row mt-16">
           <div className="w-full md:w-1/2 lg:w-[45%] bg-inherit">
             <Image src={Collage} className="h-full w-full bg-black object-cover" alt="collage" />
           </div>
           <div className="w-full md:w-1/2 lg:w-[55%] bg-black p-10 md:py-24 md:px-24">
             <h2 className="text-gray-50 text-lg md:text-2xl pb-4 font-bold">HELSINKI, FINLAND</h2>
-            <h3 className="text-gray-50 text-3xl md:text-6xl font-bold">13 - 15 SEPTEMBER 2024</h3>
+            <h3 className="text-gray-50 text-2xl md:text-6xl font-bold">13 - 15 SEPTEMBER 2024</h3>
 
             <ul className="py-8 md:py-14">
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">International teachers</li>
-              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">9 hours workshops</li>
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">10 hours workshops</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">1 masterclass</li>
-              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">3 parties</li>
+              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">2 parties</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Guest dancers from Europe</li>
             </ul>
-            <MainButton text="Program" href="/program" />
+            {/* <MainButton text="Program" href="/program" /> */}
+            <h3 className="text-gray-100 font-bold text-xl">Tickets soon available!</h3>
           </div>
         </div>
 
@@ -99,7 +100,9 @@ export default function Home() {
               />
               <div className="mb-4 md:mb-0" />
 
-              <TicketButtonNavigation />
+              <Body text="Tickets will be soon available!" />
+
+              {/* <TicketButtonNavigation /> */}
             </div>
           </AnimatedContainer>
         </section>
