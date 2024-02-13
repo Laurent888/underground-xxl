@@ -1,7 +1,6 @@
 import HeroImage from '@/components/HeroImage'
 import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import Image from 'next/image'
-import Schedule from '../public/Schedule.jpg'
 
 export default function Program() {
   return (
@@ -33,9 +32,7 @@ export default function Program() {
           </p>
         </div>
 
-        <div className="items-center md:w-1/2">
-          <Image src={Schedule} alt="program" className="w-full" />
-        </div>
+        <div className="items-center md:w-1/2">{/* <Image src={Schedule} alt="program" className="w-full" /> */}</div>
       </section>
 
       <section className="container mx-auto px-4 py-8 hidden">
