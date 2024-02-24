@@ -14,11 +14,7 @@ export default function Tickets() {
       </Head>
       <HeroImage title="TICKETS" />
 
-      <div className="container mx-auto pb-24">
-        <h1 className="text-4xl font-bold">COMING SOON</h1>
-      </div>
-
-      <div className="container mx-auto hidden">
+      <div className="container mx-auto">
         <section className="px-4 md:px-0 pt-10 pb-6 flex flex-col-reverse md:flex-row">
           <div className="w-full md:w-1/2 ">
             <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
@@ -32,16 +28,16 @@ export default function Tickets() {
 
             <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
             <ul>
-              <li className="pb-2">🌟 Igor and Rocio (2h)</li>
-              <li className="pb-2">🌟 Cristian and Gabriella (3h)</li>
-              <li className="pb-2">🌟 Alex and Sveti (2h)</li>
-              <li className="pb-2">🌟 Hasan (1h)</li>
+              <li className="pb-2">🌟 Sergio and Ana (2h)</li>
+              <li className="pb-2">🌟 Cristian and Gabriella (2h)</li>
+              <li className="pb-2">🌟 Jorge and Aroa (2h)</li>
+              <li className="pb-2">🌟 Hasan and Justina (2h)</li>
               <li className="pb-2">🌟 Jordi and Noora (1h)</li>
             </ul>
 
             <h5 className="font-bold text-xl md:text-2xl pb-6 mt-6">Not included in Full pass:</h5>
             <ul className="pb-8">
-              <li>🔸 Masterclass with Igor and Rocio (1h)</li>
+              <li>🔸 Masterclass with Cristian and Gabriella (1h)</li>
             </ul>
 
             <p className="font-semibold text-neutral-400">Refund policy</p>
@@ -63,51 +59,53 @@ export default function Tickets() {
         <section className="pb-8 mx-4 md:mx-0">
           <h2 className="text-4xl md:text-6xl font-extrabold italic pb-8">PRICES</h2>
 
-          <PriceRow showPerson title="Super Early Bird Couple Pass" price={154}>
+          <PriceRow showPerson title="Super Early Bird Couple Pass" price={174}>
             <p className="text-neutral-500 text-sm">
-              <span className="line-through">Only 5 couple passes available!</span>
+              <span>Only 5 couple passes available!</span>
               <br />
-              <span className="font-bold text-red-500">SOLD OUT!</span>
+              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
           </PriceRow>
 
-          <PriceRow showPerson title="Early Bird Couple Pass" price={164}>
+          <PriceRow showPerson title="Early Bird Couple Pass" price={186}>
             <p className="text-neutral-500 text-sm">
-              <span className="line-through">Available only until May 15th!</span>
+              <span>Only 5 couple passes available!</span>
               <br />
-              <span className="font-bold text-red-500">SOLD OUT!</span>
+              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
           </PriceRow>
 
-          <PriceRow title="Early Bird Full Pass" price={87}>
+          <PriceRow title="Early Bird Full Pass Follower" price={93}>
             <p className="text-neutral-500 text-sm">
-              <span className="line-through">Available only until May 15th!</span>
+              <span>Only 8 available!</span>
               <br />
-              <span className="font-bold text-red-500">SOLD OUT!</span>
+              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
           </PriceRow>
 
-          <PriceRow title="Full Pass Leader" price={95}>
+          <PriceRow title="Early Bird Full Pass Leader" price={93}>
             <p className="text-neutral-500 text-sm">
-              <span className="font-bold text-red-500">SOLD OUT!</span>
+              <span>Only 8 available!</span>
+              <br />
+              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
           </PriceRow>
 
-          <PriceRow title="Full Pass Follower" price={95}>
-            <p className="text-neutral-500 text-sm">
-              <span className="font-bold text-red-500">SOLD OUT!</span>
-            </p>
+          {/* <PriceRow title="Full Pass Leader" price={99}>
+            <p className="text-neutral-500 text-sm"></p>
           </PriceRow>
 
-          <PriceRow showPerson title="Couple Pass Leader/Follower" price={180}>
-            <p className="text-neutral-500 text-sm">
-              <span className="font-bold text-red-500">SOLD OUT!</span>
-            </p>
+          <PriceRow title="Full Pass Follower" price={99}>
+            <p className="text-neutral-500 text-sm"></p>
           </PriceRow>
 
-          <PriceRow title="Party Pass" price={40}>
+          <PriceRow showPerson title="Couple Pass Leader/Follower" price={190}>
+            <p className="text-neutral-500 text-sm"></p>
+          </PriceRow> */}
+
+          {/* <PriceRow title="Party Pass" price={40}>
             <p className="text-neutral-500 text-sm">Access to friday, saturday and sunday parties</p>
-          </PriceRow>
+          </PriceRow> */}
         </section>
 
         {/* Ticket Tailor embedded code */}
@@ -121,8 +119,8 @@ export default function Tickets() {
             id="someId"
             dangerouslySetInnerHTML={{
               __html: `<!-- Ticket Tailor Widget. Paste this into your website where you want the widget to appear. Do not change the code or the widget may not work properly. -->
-            <div class="tt-widget"><div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/checkout/new-session/id/1979805/chk/f691/?ref=website_widget" target="_blank">Click here to buy tickets</a><br /><small><a href="https://www.tickettailor.com?rf=wdg_136742" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://cdn.tickettailor.com/js/widgets/min/widget.js" data-url="https://www.tickettailor.com/checkout/new-session/id/1979805/chk/f691/" data-type="inline" data-inline-minimal="true" data-inline-show-logo="false" data-inline-bg-fill="true" data-inline-inherit-ref-from-url-param="" data-inline-ref="website_widget"></script></div>
-            <!-- End of Ticket Tailor Widget -->`,
+              <div class="tt-widget"><div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/checkout/new-session/id/3386120/chk/f7ef/" target="_blank">Click here to buy tickets</a><br /><small><a href="https://www.tickettailor.com?rf=wdg_136742" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://cdn.tickettailor.com/js/widgets/min/widget.js" data-url="https://www.tickettailor.com/checkout/new-session/id/3386120/chk/f7ef/" data-type="inline" data-inline-minimal="true" data-inline-show-logo="false" data-inline-bg-fill="false" data-inline-inherit-ref-from-url-param="" data-inline-ref=""></script></div>
+              <!-- End of Ticket Tailor Widget -->`,
             }}
           />
 
