@@ -49,8 +49,7 @@ export default function Home() {
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">3 parties</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Guest dancers from Europe</li>
             </ul>
-            {/* <MainButton text="Program" href="/program" /> */}
-            <h3 className="text-gray-100 font-bold text-xl">Tickets soon available!</h3>
+            <MainButton text="PROGRAM" href="/program" />
           </div>
         </div>
 
@@ -100,9 +99,7 @@ export default function Home() {
               />
               <div className="mb-4 md:mb-0" />
 
-              <Body text="Tickets will be soon available!" />
-
-              {/* <TicketButtonNavigation /> */}
+              <TicketButtonNavigation />
             </div>
           </AnimatedContainer>
         </section>

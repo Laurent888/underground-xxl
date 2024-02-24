@@ -9,22 +9,22 @@ import Head from 'next/head'
 const montserrat = localFont({
   src: [
     {
-      path: '../fonts/Montserrat-Regular.ttf',
+      path: '../fonts/europa-light.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../fonts/Montserrat-Medium.ttf',
+      path: '../fonts/europa-regular.ttf',
       weight: '500',
       style: 'normal',
     },
     {
-      path: '../fonts/Montserrat-SemiBold.ttf',
+      path: '../fonts/europa-regular.ttf',
       weight: '600',
       style: 'normal',
     },
     {
-      path: '../fonts/Montserrat-Bold.ttf',
+      path: '../fonts/europa-bold.ttf',
       weight: '800',
       style: 'normal',
     },

@@ -20,7 +20,7 @@ function Body({ text, hasPadding, mobileLeft = false, bottomSpacing = true, clas
 
   return (
     <p
-      className={`font-normal text-base md:xl ${
+      className={`font-normal tracking-wide text-base md:xl ${
         hasPadding && 'px-4'
       } md:px-0 text-center md:text-start ${paddingBottom} ${mobileLeft && 'text-start'} ${className}`}
     >

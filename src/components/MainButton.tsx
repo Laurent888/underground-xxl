@@ -13,8 +13,7 @@ function MainButton({ text, href, newTab = false, onClick }: MainButtonProps) {
     <Link href={href ?? '/'} target={newTab ? '_blank' : undefined}>
       <button
         onClick={onClick}
-        className="py-4 px-12 font-semibold text-2xl text-white bg-gradient-to-l from-orange-600 via-orange-500 to-yellow-500 hover:opacity-80 hover:ease-linear duration-100"
-        style={{ clipPath: 'polygon(12% 0%, 100% 0%, 88% 100%, 0% 100%)' }}
+        className="py-3 px-10 font-semibold text-xl tracking-wider text-white bg-gradient-to-l  from-orange-700 via-orange-600 to-amber-600 hover:opacity-80 hover:ease-linear duration-100"
       >
         {text}
       </button>
