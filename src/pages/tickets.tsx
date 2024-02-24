@@ -136,7 +136,7 @@ export default function Tickets() {
           />
         </section>
 
-        <section className="pb-14">
+        <section className="pb-14 hidden">
           <h5 className="font-bold text-xl md:text-2xl pb-4">Tickets at the door</h5>
           <p>
             You can buy directly a ticket for the bachata social at the door. Please note that we{' '}
