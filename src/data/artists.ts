@@ -2,8 +2,8 @@ import CristianGabriella from '../public/cristianGabriella.jpg'
 import CristianGabriella2 from '../public/cristianGabriella2.jpg'
 import SergioAna from '../public/sergioAna.jpeg'
 import SergioAna2 from '../public/sergioAna2.jpg'
-import JorgeAroa from '../public/jorgeAroa.jpg'
-import JorgeAroa2 from '../public/jorgeAroa2.jpg'
+import MarioLidia from '../public/MarioLidia.jpg'
+import MarioLidia2 from '../public/MarioLidia2.jpg'
 import JordiNoora from '../public/jordiNoora.jpg'
 import LaurentDJ from '../public/laurentTram.jpg'
 import LaurentDJ2 from '../public/laurentTram2.jpg'
@@ -44,15 +44,14 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     imageAlternative: CristianGabriella2,
     instagram: 'https://www.instagram.com/cristianygabriella/',
   },
-  ja: {
-    code: 'ja',
-    name: 'Jorge and Aroa',
-    description:
-      'Talented bachata dancers with sensual style from Cadiz. They are the rising stars of the bachata scene in Spain!',
+  ml: {
+    code: 'ml',
+    name: 'Mario and Lidia',
+    description: 'Talented bachata dancers from Madrid. They are the rising stars of the bachata scene in Spain!',
     classes: 'TBD',
-    image: JorgeAroa,
-    imageAlternative: JorgeAroa2,
-    instagram: 'https://www.instagram.com/jorgeyaroabachata/',
+    image: MarioLidia,
+    imageAlternative: MarioLidia2,
+    instagram: 'https://www.instagram.com/marioylidiaoficial/',
   },
   ha: {
     code: 'ha',
