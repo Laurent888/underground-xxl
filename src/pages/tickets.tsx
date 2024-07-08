@@ -31,7 +31,7 @@ export default function Tickets() {
               <li className="pb-2">🌟 Sergio and Ana (2h)</li>
               <li className="pb-2">🌟 Cristian and Gabriella (2h)</li>
               <li className="pb-2">🌟 Mario and Lidia (3h)</li>
-              <li className="pb-2">🌟 Hasan and Justina (2h)</li>
+              <li className="pb-2">🌟 Hasan and Ieva (2h)</li>
               <li className="pb-2">🌟 Jordi and Noora (1h)</li>
             </ul>
 
@@ -61,15 +61,15 @@ export default function Tickets() {
 
           <PriceRow showPerson title="Super Early Bird Couple Pass" price={174}>
             <p className="text-neutral-500 text-sm">
-              <span>Only 5 couple passes available!</span>
-              <br />
-              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
+              {/* <span>Only 5 couple passes available!</span> */}
+              {/* <br /> */}
+              <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
           <PriceRow showPerson title="Early Bird Couple Pass" price={186}>
             <p className="text-neutral-500 text-sm">
-              <span>Only 5 couple passes available!</span>
+              <span>Only 4 couple passes available!</span>
               <br />
               {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
@@ -77,9 +77,9 @@ export default function Tickets() {
 
           <PriceRow title="Early Bird Full Pass Follower" price={93}>
             <p className="text-neutral-500 text-sm">
-              <span>Only 8 available!</span>
-              <br />
-              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
+              {/* <span>Only 8 available!</span> */}
+              {/* <br /> */}
+              <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
@@ -91,7 +91,7 @@ export default function Tickets() {
             </p>
           </PriceRow>
 
-          {/* <PriceRow title="Full Pass Leader" price={99}>
+          <PriceRow title="Full Pass Leader" price={99}>
             <p className="text-neutral-500 text-sm"></p>
           </PriceRow>
 
@@ -101,7 +101,7 @@ export default function Tickets() {
 
           <PriceRow showPerson title="Couple Pass Leader/Follower" price={190}>
             <p className="text-neutral-500 text-sm"></p>
-          </PriceRow> */}
+          </PriceRow>
 
           {/* <PriceRow title="Party Pass" price={40}>
             <p className="text-neutral-500 text-sm">Access to friday, saturday and sunday parties</p>
