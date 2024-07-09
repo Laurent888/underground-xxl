@@ -47,8 +47,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <CookiesProvider>
       <main className={montserrat.className}>
         <Head>
-          <title>Underground XXL | Bachata weekend in Helsinki</title>
-          <meta name="Underground XXL" content="Bachata weekend, festival in Helsinki, Finland" />
+          <title>Bachata Underground XXL | Bachata weekend in Helsinki</title>
+          <meta name="Bachata Underground XXL" content="Bachata weekend, festival in Helsinki, Finland" />
         </Head>
         <GoogleAnalytics trackPageViews gaMeasurementId="G-797GF2JHHZ" />
         <Layout>
