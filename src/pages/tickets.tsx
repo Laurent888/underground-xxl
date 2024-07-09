@@ -40,6 +40,12 @@ export default function Tickets() {
               <li>🔸 Masterclass with Cristian and Gabriella (1h)</li>
             </ul>
 
+            <p className="font-semibold text-neutral-400">Party pass</p>
+            <Body
+              mobileLeft
+              text="Party pass will be available 1st of August at the price of 40€. It includes access to all parties and pre-party workshops."
+            />
+
             <p className="font-semibold text-neutral-400">Refund policy</p>
             <Body
               mobileLeft

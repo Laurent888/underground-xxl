@@ -7,28 +7,57 @@ export default function Program() {
     <div className="bg-black">
       <HeroImage title="Program" />
 
-      <section className="container mx-auto pb-24">
-        <h1 className="text-4xl font-bold">COMING SOON</h1>
-      </section>
-
-      <section className="container mt-12 mx-auto flex flex-col items-center md:items-start mb-12 hidden">
+      <section className="container mt-12 mx-auto flex flex-col items-center md:items-start mb-12">
         <h3 className="text-3xl font-bold italic mb-1 text-center mx-2">PROGRAM DETAILS</h3>
-        <p className="mb-12 text-center mx-2 text-stone-500">Program can be subject to change</p>
+        <p className="mb-12 text-center mx-2 text-stone-500">
+          This is a preliminary program. It will be subject to change
+        </p>
 
-        <div className="mb-12 px-4">
-          <p className="mb-2">• Registration open on friday at 18:30, and on saturday at 10:30</p>
-          <p className="mb-2">• Please bring an ID for the registration.</p>
+        <div className="mb-12 px-2">
+          <p className="mb-2 text-2xl font-bold italic">Friday</p>
+          <div className="flex flex-row">
+            <p className="font-bold mr-2">20:00 - 22:00</p>
+            <p>Workshops</p>
+          </div>
+          <div className="flex flex-row">
+            <p className="font-bold mr-2">22:00 - 03:00</p>
+            <p>Social</p>
+          </div>
+
+          <p className="mb-2 text-2xl font-bold italic mt-4 ">Saturday</p>
+          <div className="flex flex-row">
+            <p className="font-bold mr-2">12:00 - 18:00</p>
+            <p>Workshops</p>
+          </div>
+          <div className="flex flex-row">
+            <p className="font-bold mr-2">21:00 - 22:00</p>
+            <p>Pre-party workshop</p>
+          </div>
+          <div className="flex flex-row">
+            <p className="font-bold mr-2">22:00 - 04:00</p>
+            <p>Social</p>
+          </div>
+
+          <p className="mb-2 text-2xl font-bold italic mt-4 ">Sunday</p>
+          <div className="flex flex-row">
+            <p className="font-bold mr-2">17:00 - 19:00</p>
+            <p>Workshops</p>
+          </div>
+          <div className="flex flex-row">
+            <p className="font-bold mr-2">19:00 - 22:00</p>
+            <p>Social</p>
+          </div>
+
+          <p className="mb-2 mt-8">• Please bring an ID for the registration.</p>
           <p className="mb-2">
             • If you are registered for the masterclass, please bring cash for the payment (20 EUR)
           </p>
-          <p className="mb-2">• Party Pass holder also have access to the Day social on sunday</p>
           <p className="mb-2">• Single night party pass can be bought at the door. More info in the ticket page.</p>
-          <p className="mb-2">
+          {/* <p className="mb-2">
             • There is lunch option for 9,5 EUR in the same building as the event on Saturday. Recommended!
-          </p>
+          </p> */}
           <p className="mb-2">
-            • ATTENTION! Sunday workshop and parties will be in Helsinki Dance Central (8min walk from metro station
-            Sörnainen) Address: Sörnäisten rantatie 33C, 00500 Helsinki
+            • ATTENTION! Sunday workshop and parties will be held in a different location. More info soon.
           </p>
         </div>
 
