@@ -40,6 +40,7 @@ export default function Venue() {
           <p className="font-bold">This is a dance studio, so clean indoor shoes are mandatory!</p>
 
           <h3 className="font-bold mt-10 mb-2 text-2xl">Recommended hotel</h3>
+          <p>Noli Studios (10% off with the code SOBHELSINKI). Needs to be booked from a laptop, not on a mobile</p>
           <p>Holiday Inn West Ruoholahti (450m from the event venue)</p>
         </section>
 

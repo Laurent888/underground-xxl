@@ -40,7 +40,7 @@ export default function Program() {
 
           <p className="mb-2 text-2xl font-bold italic mt-4 ">Sunday</p>
           <div className="flex flex-row">
-            <p className="font-bold mr-2">17:00 - 19:00</p>
+            <p className="font-bold mr-2">13:00 - 19:00</p>
             <p>Workshops</p>
           </div>
           <div className="flex flex-row">
