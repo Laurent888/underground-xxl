@@ -20,7 +20,7 @@ export default function Program() {
             <p>Workshops</p>
           </div>
           <div className="flex flex-row">
-            <p className="font-bold mr-2">22:00 - 03:00</p>
+            <p className="font-bold mr-2">22:00 - 04:00</p>
             <p>Social</p>
           </div>
 
@@ -34,7 +34,7 @@ export default function Program() {
             <p>Pre-party workshop</p>
           </div>
           <div className="flex flex-row">
-            <p className="font-bold mr-2">22:00 - 04:00</p>
+            <p className="font-bold mr-2">22:00 - 05:00</p>
             <p>Social</p>
           </div>
 
@@ -44,7 +44,7 @@ export default function Program() {
             <p>Workshops</p>
           </div>
           <div className="flex flex-row">
-            <p className="font-bold mr-2">19:00 - 22:00</p>
+            <p className="font-bold mr-2">19:00 - 22:30</p>
             <p>Social</p>
           </div>
 
