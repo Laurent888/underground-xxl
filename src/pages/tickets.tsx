@@ -33,6 +33,8 @@ export default function Tickets() {
               <li className="pb-2">🌟 Mario and Lidia (3h)</li>
               <li className="pb-2">🌟 Hasan and Ieva (2h)</li>
               <li className="pb-2">🌟 Jordi and Noora (1h)</li>
+              <li className="pb-2">🌟 Maddy and Joan (1h)</li>
+              <li className="pb-2">🌟 Hamza and Noora (1h)</li>
             </ul>
 
             <h5 className="font-bold text-xl md:text-2xl pb-6 mt-6">Not included in Full pass:</h5>
@@ -108,9 +110,9 @@ export default function Tickets() {
             <p className="text-neutral-500 text-sm"></p>
           </PriceRow>
 
-          {/* <PriceRow title="Party Pass" price={40}>
+          <PriceRow title="Party Pass" price={46}>
             <p className="text-neutral-500 text-sm">Access to friday, saturday and sunday parties</p>
-          </PriceRow> */}
+          </PriceRow>
         </section>
 
         {/* Ticket Tailor embedded code */}
