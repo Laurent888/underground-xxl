@@ -43,7 +43,7 @@ export default function Tickets() {
             <p className="font-semibold text-neutral-400">Party pass</p>
             <Body
               mobileLeft
-              text="Party pass will be available 1st of August at the price of 40€. It includes access to all parties and pre-party workshops."
+              text="Party pass will be available 1st of August at the price of 46€. It includes access to all parties and pre-party workshops."
             />
 
             <p className="font-semibold text-neutral-400">Refund policy</p>
@@ -75,25 +75,22 @@ export default function Tickets() {
 
           <PriceRow showPerson title="Early Bird Couple Pass" price={186}>
             <p className="text-neutral-500 text-sm">
-              <span>Only 4 couple passes available!</span>
-              <br />
-              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
+              {/* <span>Only 4 couple passes available!</span> */}
+              <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
           <PriceRow title="Early Bird Full Pass Follower" price={93}>
             <p className="text-neutral-500 text-sm">
               {/* <span>Only 8 available!</span> */}
-              {/* <br /> */}
               <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
           <PriceRow title="Early Bird Full Pass Leader" price={93}>
             <p className="text-neutral-500 text-sm">
-              <span>Only 8 available!</span>
-              <br />
-              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
+              {/* <span>Only 8 available!</span> */}
+              <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
@@ -102,7 +99,9 @@ export default function Tickets() {
           </PriceRow>
 
           <PriceRow title="Full Pass Follower" price={99}>
-            <p className="text-neutral-500 text-sm"></p>
+            <p className="text-neutral-500 text-sm">
+              <span className="font-bold text-red-500">SOLD OUT!</span>
+            </p>
           </PriceRow>
 
           <PriceRow showPerson title="Couple Pass Leader/Follower" price={190}>
