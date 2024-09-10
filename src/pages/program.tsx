@@ -22,7 +22,7 @@ export default function Program() {
             </div>
             <div className="flex flex-row">
               <p className="font-bold mr-2">22:00 - 04:00</p>
-              <p>Social</p>
+              <p>Social. Dresscode: Tropical 🌴</p>
             </div>
 
             <p className="mb-2 text-2xl font-bold italic mt-4 ">Saturday</p>
@@ -36,7 +36,7 @@ export default function Program() {
             </div>
             <div className="flex flex-row">
               <p className="font-bold mr-2">22:30 - 05:00</p>
-              <p>Social</p>
+              <p>Social. Dresscode: Elegant 🤵‍♀️🤵🏽</p>
             </div>
 
             <p className="mb-2 text-2xl font-bold italic mt-4 ">Sunday</p>
