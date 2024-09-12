@@ -48,6 +48,13 @@ export default function Tickets() {
               text="Party pass will be available 1st of August at the price of 46€. It includes access to all parties and pre-party workshops."
             />
 
+            <p className="font-semibold text-neutral-400">Single night pass</p>
+            <Body
+              mobileLeft
+              text="Single night pass are available at the door. Please note that we only accept cash or mobile pay. The prices are as follows:
+              Friday 15€, Saturday 25€ and Sunday 12€. Pre-party workshop is included in the price."
+            />
+
             <p className="font-semibold text-neutral-400">Refund policy</p>
             <Body
               mobileLeft

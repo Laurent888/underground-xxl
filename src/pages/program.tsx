@@ -21,7 +21,7 @@ export default function Program() {
               <p>Workshops</p>
             </div>
             <div className="flex flex-row">
-              <p className="font-bold mr-2">22:00 - 04:00</p>
+              <p className="font-bold mr-2">22:30 - 04:00</p>
               <p>Social. Dresscode: Tropical 🌴</p>
             </div>
 
@@ -29,6 +29,10 @@ export default function Program() {
             <div className="flex flex-row">
               <p className="font-bold mr-2">11:00 - 17:30</p>
               <p>Workshops</p>
+            </div>
+            <div className="flex flex-row">
+              <p className="font-bold mr-2">16:00 - 20:00</p>
+              <p>Outdoor bachata social at Annantalo A-lava (Kamppi metro)</p>
             </div>
             <div className="flex flex-row">
               <p className="font-bold mr-2">21:30 - 22:30</p>
@@ -76,7 +80,8 @@ export default function Program() {
             • There is lunch option for 9,5 EUR in the same building as the event on Saturday. Recommended!
           </p> */}
           <p className="mb-2">
-            • ATTENTION! Sunday workshop and parties will be held in a different location. More info soon.
+            • ATTENTION! Sunday workshop and parties will be held in a different location. From 13 to 16 in Bongos
+            Studio and from 16:00 to 22:30 in Seaside Lounge.
           </p>
         </div>
 
