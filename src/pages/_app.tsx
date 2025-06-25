@@ -3,7 +3,7 @@ import { CookiesProvider } from 'react-cookie'
 import Layout from '@/components/Layout'
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import localFont from '@next/font/local'
+import localFont from 'next/font/local'
 import Head from 'next/head'
 
 const montserrat = localFont({
