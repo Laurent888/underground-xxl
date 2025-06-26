@@ -7,10 +7,8 @@ import { AiOutlineLeftCircle } from 'react-icons/ai'
 import Body from './Body'
 import Link from 'next/link'
 import InstagramLogo from './InstagramLogo'
-import { motion, useAnimation, useMotionValue } from 'framer-motion'
+import { motion, useMotionValue } from 'framer-motion'
 import { useWindowSize } from '@/utils/useWindowDimention'
-
-const initials = { x: 0, transition: { bounce: false, duration: 0.3, ease: 'easeOut' } }
 
 const ArtistDetailsDrawer = ({
   visible,
@@ -23,21 +21,11 @@ const ArtistDetailsDrawer = ({
 }): JSX.Element => {
   const [artist, setArtist] = useState(artistsData.ms)
   const x = useMotionValue(-2000)
-  const controls = useAnimation()
-
   const { width } = useWindowSize()
 
   useEffect(() => {
     setArtist(artistsData[code])
   }, [code])
-
-  useEffect(() => {
-    if (visible) {
-      controls.start(initials)
-    } else {
-      controls.start({ x: -(width ?? 500), transition: { bounce: false, duration: 0.2, ease: 'easeOut' } })
-    }
-  }, [controls, visible, width])
 
   return (
     <>
@@ -50,14 +38,22 @@ const ArtistDetailsDrawer = ({
       <motion.div
         drag="x"
         style={{ x }}
-        animate={controls}
+        animate={{
+          x: visible ? 0 : -(width ?? 500),
+        }}
+        transition={{
+          bounce: false,
+          duration: visible ? 0.3 : 0.2,
+          ease: 'easeOut',
+        }}
         dragConstraints={{ right: 0 }}
         onDragEnd={() => {
           if (x.get() < -30) {
             // Close the modal
             onClose()
           } else {
-            controls.start(initials)
+            // Reset to open position
+            x.set(0)
           }
         }}
         dragElastic={0}
