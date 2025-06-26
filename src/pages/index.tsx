@@ -40,12 +40,11 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 lg:w-[55%] bg-black p-10 md:py-24 md:px-24">
             <h2 className="text-gray-50 text-lg md:text-2xl pb-4 font-bold">HELSINKI, FINLAND</h2>
-            <h3 className="text-gray-50 text-2xl md:text-6xl font-bold">13 - 15 SEPTEMBER 2024</h3>
+            <h3 className="text-gray-50 text-2xl md:text-6xl font-bold">25 - 28 SEPTEMBER 2025</h3>
 
             <ul className="py-8 md:py-14">
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">International teachers</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">10 hours workshops</li>
-              <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">1 masterclass</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">3 parties</li>
               <li className="text-gray-300 font-semibold text-xl md:text-2xl pb-4">Guest dancers from Europe</li>
             </ul>

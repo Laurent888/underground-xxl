@@ -19,15 +19,15 @@ export default function Tickets() {
           <div className="w-full md:w-1/2 ">
             <h5 className="font-bold text-xl md:text-2xl pb-4">Full pass includes:</h5>
             <ul>
-              <li className="pb-2">🔸 Access to all workshops except the masterclass</li>
+              <li className="pb-2">🔸 Access to all workshops</li>
               <li className="pb-2">🔸 Friday, Saturday and Sunday parties</li>
               <li className="pb-2">
-                🔸 30% off for dancers living outside of Finland. Use the discount code &quot;HFUUJK&quot;
+                🔸 30% off for dancers living outside of Finland. Use the discount code &quot;INTERNATIONAL25&quot;
               </li>
             </ul>
 
             <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
-            <ul>
+            <ul className="mb-4">
               <li className="pb-2">🌟 Miguel and Sunsire (3h)</li>
               <li className="pb-2">🌟 Jorge and Aroa (2h)</li>
               <li className="pb-2">🌟 Alex and Alma (3h)</li>
@@ -47,7 +47,7 @@ export default function Tickets() {
             <Body
               mobileLeft
               text="Single night pass are available at the door. Please note that we only accept cash or mobile pay. The prices are as follows:
-              Friday 15€, Saturday 25€ and Sunday 12€. Pre-party workshop is included in the price."
+              Friday 15€, Saturday 25€ and Sunday 15€. Pre-party workshop is included in the price."
             />
 
             <p className="font-semibold text-neutral-400">Refund policy</p>
@@ -69,7 +69,7 @@ export default function Tickets() {
         <section className="pb-8 mx-4 md:mx-0">
           <h2 className="text-4xl md:text-6xl font-extrabold italic pb-8">PRICES</h2>
 
-          <PriceRow showPerson title="Super Early Bird Couple Pass" price={174}>
+          <PriceRow title="Super Early Bird Pass" price={80}>
             <p className="text-neutral-500 text-sm">
               {/* <span>Only 5 couple passes available!</span> */}
               {/* <br /> */}
@@ -77,43 +77,42 @@ export default function Tickets() {
             </p>
           </PriceRow>
 
-          <PriceRow showPerson title="Early Bird Couple Pass" price={186}>
+          <PriceRow title="Early Bird Pass" price={90}>
             <p className="text-neutral-500 text-sm">
               {/* <span>Only 4 couple passes available!</span> */}
               <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
-          <PriceRow title="Early Bird Full Pass Follower" price={93}>
+          <PriceRow title="2nd Round Full Pass Follower" price={100}>
             <p className="text-neutral-500 text-sm">
-              {/* <span>Only 8 available!</span> */}
-              <span className="font-bold text-red-500">SOLD OUT!</span>
+              <span>Only 3 left!</span>
+              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
           </PriceRow>
 
-          <PriceRow title="Early Bird Full Pass Leader" price={93}>
+          <PriceRow title="2nd Round Pass Leader" price={100}>
             <p className="text-neutral-500 text-sm">
-              {/* <span>Only 8 available!</span> */}
-              <span className="font-bold text-red-500">SOLD OUT!</span>
+              <span>Only 10 left!</span>
+              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
           </PriceRow>
 
-          <PriceRow title="Full Pass Leader" price={99}>
+          <PriceRow title="3rd Round Pass Leader" price={110}>
             <p className="text-neutral-500 text-sm"></p>
           </PriceRow>
 
-          <PriceRow title="Full Pass Follower" price={99}>
+          <PriceRow title="3rd Round Pass Follower" price={110}>
             <p className="text-neutral-500 text-sm">
-              <span className="font-bold text-red-500">SOLD OUT!</span>
+              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
-          </PriceRow>
-
-          <PriceRow showPerson title="Couple Pass Leader/Follower" price={190}>
-            <p className="text-neutral-500 text-sm"></p>
           </PriceRow>
 
           <PriceRow title="Party Pass" price={46}>
             <p className="text-neutral-500 text-sm">Access to friday, saturday and sunday parties</p>
+            <p className="text-neutral-500 text-sm">
+              <span className="font-bold text-gray-500">Available soon!</span>
+            </p>
           </PriceRow>
         </section>
 
