@@ -13,7 +13,7 @@ import TicketButtonNavigation from '@/components/TicketButtonNavigation'
 import AnimatedContainer from '@/components/motion/AnimatedContainer'
 
 export default function Home() {
-  const [artistCode, setArtistCode] = useState<ArtistCode>('sa')
+  const [artistCode, setArtistCode] = useState<ArtistCode>('ms')
   const [showDrawer, setShowDrawer] = useState(false)
 
   useEffect(() => {

@@ -1,15 +1,13 @@
-import CristianGabriella from '../public/cristianGabriella.jpg'
-import CristianGabriella2 from '../public/cristianGabriella2.jpg'
-import SergioAna from '../public/sergioAna.jpeg'
-import SergioAna2 from '../public/sergioAna2.jpg'
-import MarioLidia from '../public/MarioLidia.jpg'
-import MarioLidia2 from '../public/MarioLidia2.jpg'
-import JordiNoora from '../public/jordiNoora.jpg'
+import alexAlma from '../public/artists/alexAlma.jpg'
+import marcoEleonora from '../public/artists/marcoEleonora.jpg'
+import jorgeAroa1 from '../public/artists/jorgeAroa1.jpg'
+import kevin from '../public/artists/kevin.jpg'
 import LaurentDJ from '../public/laurentTram.jpg'
 import LaurentDJ2 from '../public/laurentTram2.jpg'
-import BabakDJ from '../public/djbabak.jpg'
-import Hasan from '../public/HasanJustina.jpg'
-import Hasan2 from '../public/HasanJustina2.jpg'
+import BabakDJ from '../public/artists/djbabak.jpg'
+import hasanValerija from '../public/artists/hasanValerija.jpeg'
+import SorushElise from '../public/artists/SorushElise.jpg'
+import MiguelSunsire from '../public/artists/MiguelSunsire.jpg'
 import { ArtistCode } from '@/components/ArtistScrollview'
 import { StaticImageData } from 'next/image'
 
@@ -24,52 +22,64 @@ type ArtistData = {
 }
 
 export const artistsData: Record<ArtistCode, ArtistData> = {
-  sa: {
-    code: 'sa',
-    name: 'Sergio and Ana',
+  ms: {
+    code: 'ms',
+    name: 'Miguel and Sunsire',
     description:
-      'Amazing bachata dancers from Spain. Their style is characterized by their smoothness and sensuality. They have been teaching all around the world and we are very happy to have them in Helsinki!',
+      'Talented bachata dancers and instructors. They are known for their dynamic performances and excellent teaching skills.',
     classes: 'TBD',
-    image: SergioAna,
-    imageAlternative: SergioAna2,
-    instagram: 'https://www.instagram.com/sergioyanaoficial/',
+    image: MiguelSunsire,
+    imageAlternative: MiguelSunsire,
+    instagram: 'https://www.instagram.com/miguelysunsire/',
   },
-  cg: {
-    code: 'cg',
-    name: 'Cristian and Gabriella',
+  ja: {
+    code: 'ja',
+    name: 'Jorge and Aroa',
+    description: 'Talented bachata dancers from Spain. They are the rising stars of the bachata scene in Europe!',
+    classes: 'TBD',
+    image: jorgeAroa1,
+    imageAlternative: jorgeAroa1,
+    instagram: 'https://www.instagram.com/jorgeyaroabachata/',
+  },
+  aa: {
+    code: 'aa',
+    name: 'Alex and Alma',
     description:
-      'We had to invite them again for this 2nd edition! Two beautiful dancers from Sevilla and Cadiz, Cristian and Gabriella will impress you with their smoothness and precision. Checkout their Instagram so you will understand why we wanted absolutely to bring them!',
+      'We had to invite them again for this 2nd edition! Two beautiful dancers from Spain, Alex and Alma will impress you with their smoothness and precision. Checkout their Instagram so you will understand why we wanted absolutely to bring them!',
     classes: 'TBD',
-    image: CristianGabriella,
-    imageAlternative: CristianGabriella2,
-    instagram: 'https://www.instagram.com/cristianygabriella/',
+    image: alexAlma,
+    imageAlternative: alexAlma,
+    instagram: 'https://www.instagram.com/almayalexoficial/',
   },
-  ml: {
-    code: 'ml',
-    name: 'Mario and Lidia',
-    description: 'Talented bachata dancers from Madrid. They are the rising stars of the bachata scene in Spain!',
-    classes: 'TBD',
-    image: MarioLidia,
-    imageAlternative: MarioLidia2,
-    instagram: 'https://www.instagram.com/marioylidiaoficial/',
-  },
-  ha: {
-    code: 'ha',
-    name: 'Hasan and Ieva',
+  me: {
+    code: 'me',
+    name: 'Marco and Eleonora',
     description:
-      "Hasan is a dancer and teacher from Turkey. He's currently based in Vilnius, Lithuania. You will see him in many international festivals. He taught already once at the Underground, and we wanted to bring him back!",
-    image: Hasan,
-    imageAlternative: Hasan2,
+      'Amazing bachata dancers from Italy. Their style is characterized by their smoothness and sensuality. They have been teaching all around the world and we are very happy to have them in Helsinki!',
+    classes: 'TBD',
+    image: marcoEleonora,
+    imageAlternative: marcoEleonora,
+    instagram: 'https://www.instagram.com/marcoyeleonora/',
+  },
+  hv: {
+    code: 'hv',
+    name: 'Hasan and Valerija',
+    description:
+      "Hasan is a dancer and teacher from Turkey. He's currently based in Lithuania. You will see him in many international festivals. He taught already once at the Underground, and we wanted to bring him back!",
+    image: hasanValerija,
+    imageAlternative: hasanValerija,
     classes: 'TBD',
     instagram: 'https://www.instagram.com/hasan.dance/',
   },
-  jn: {
-    code: 'jn',
-    name: 'Jordi and Noora',
+  ke: {
+    code: 'ke',
+    name: 'Kevin',
     description:
-      'Our local teachers in Helsinki! Jordi is from Catalonia and Noora from Finland. They have been teaching together for couple of years and are often invited at our month Underground parties.',
+      'Our local teacher in Helsinki! Kevin is an experienced dancer and teacher who has been teaching for several years and is often invited at our monthly Underground parties.',
     classes: '2 hours class',
-    image: JordiNoora,
+    image: kevin,
+    imageAlternative: kevin,
+    instagram: 'https://www.instagram.com/kevcds/',
   },
   lt: {
     code: 'lt',
@@ -85,5 +95,16 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     description:
       'One of the Underground resident DJ in Helsinki. Babak is an experienced bachata DJ and is invited in many events in Finland!',
     image: BabakDJ,
+    imageAlternative: BabakDJ,
+  },
+  se: {
+    code: 'se',
+    name: 'Sorush and Elise',
+    description:
+      'International bachata dancers and teachers. They bring their unique style and energy to every event they attend.',
+    classes: 'TBD',
+    image: SorushElise,
+    imageAlternative: SorushElise,
+    instagram: 'https://www.instagram.com/sorush_elise_bachata/',
   },
 }

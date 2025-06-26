@@ -28,18 +28,13 @@ export default function Tickets() {
 
             <h6 className="font-bold text-lg md:text-xl pb-4 mt-6">Confirmed artists:</h6>
             <ul>
-              <li className="pb-2">🌟 Sergio and Ana (2h)</li>
-              <li className="pb-2">🌟 Cristian and Gabriella (2h)</li>
-              <li className="pb-2">🌟 Mario and Lidia (3h)</li>
-              <li className="pb-2">🌟 Hasan and Ieva (2h)</li>
-              <li className="pb-2">🌟 Jordi and Noora (1h)</li>
-              <li className="pb-2">🌟 Maddy and Joan (1h)</li>
-              <li className="pb-2">🌟 Hamza and Noora (1h)</li>
-            </ul>
-
-            <h5 className="font-bold text-xl md:text-2xl pb-6 mt-6">Not included in Full pass:</h5>
-            <ul className="pb-8">
-              <li>🔸 Masterclass with Cristian and Gabriella (1h)</li>
+              <li className="pb-2">🌟 Miguel and Sunsire (3h)</li>
+              <li className="pb-2">🌟 Jorge and Aroa (2h)</li>
+              <li className="pb-2">🌟 Alex and Alma (3h)</li>
+              <li className="pb-2">🌟 Marco and Eleonora (2h)</li>
+              <li className="pb-2">🌟 Hasan and Valerija (2h)</li>
+              <li className="pb-2">🌟 Sorush and Elise (2h)</li>
+              <li className="pb-2">🌟 Kevin (1h)</li>
             </ul>
 
             <p className="font-semibold text-neutral-400">Party pass</p>

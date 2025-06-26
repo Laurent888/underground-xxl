@@ -21,7 +21,7 @@ const ArtistDetailsDrawer = ({
   code: ArtistCode
   onClose: () => void
 }): JSX.Element => {
-  const [artist, setArtist] = useState(artistsData.sa)
+  const [artist, setArtist] = useState(artistsData.ms)
   const x = useMotionValue(-2000)
   const controls = useAnimation()
 
@@ -68,7 +68,7 @@ const ArtistDetailsDrawer = ({
         <div className="flex flex-col md:flex-row h-full">
           <div className="relative w-full md:w-1/2 h-1/2 md:h-full">
             <Image
-              src={artist.imageAlternative ?? artist.image}
+              src={artist?.imageAlternative ?? artist?.image}
               alt={artist.name}
               className="object-cover object-top w-full h-full"
             />

@@ -11,7 +11,7 @@ import { artistsData } from '@/data/artists'
 
 const CARD_WIDTH = isMobile ? 348 : 480
 
-export type ArtistCode = 'sa' | 'cg' | 'ml' | 'jn' | 'lt' | 'bm' | 'ha'
+export type ArtistCode = 'me' | 'aa' | 'ja' | 'hv' | 'ke' | 'lt' | 'bm' | 'se' | 'ms'
 
 type ArtistScrollviewProps = {
   onClick: (artistsCode: ArtistCode) => void
