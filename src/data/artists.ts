@@ -8,6 +8,7 @@ import BabakDJ from '../public/artists/djbabak.jpg'
 import hasanValerija from '../public/artists/hasanValerija.jpeg'
 import SorushElise from '../public/artists/SorushElise.jpg'
 import MiguelSunsire from '../public/artists/MiguelSunsire.jpg'
+import DjShisha from '../public/artists/dj-shisha.jpg'
 import { ArtistCode } from '@/components/ArtistScrollview'
 import { StaticImageData } from 'next/image'
 
@@ -71,6 +72,16 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     classes: 'TBD',
     instagram: 'https://www.instagram.com/hasan.dance/',
   },
+  se: {
+    code: 'se',
+    name: 'Sorush and Elise',
+    description:
+      'International bachata dancers and teachers. They bring their unique style and energy to every event they attend.',
+    classes: 'TBD',
+    image: SorushElise,
+    imageAlternative: SorushElise,
+    instagram: 'https://www.instagram.com/sorush_elise_bachata/',
+  },
   ke: {
     code: 'ke',
     name: 'Kevin',
@@ -97,14 +108,11 @@ export const artistsData: Record<ArtistCode, ArtistData> = {
     image: BabakDJ,
     imageAlternative: BabakDJ,
   },
-  se: {
-    code: 'se',
-    name: 'Sorush and Elise',
-    description:
-      'International bachata dancers and teachers. They bring their unique style and energy to every event they attend.',
-    classes: 'TBD',
-    image: SorushElise,
-    imageAlternative: SorushElise,
-    instagram: 'https://www.instagram.com/sorush_elise_bachata/',
+  sa: {
+    code: 'sa',
+    name: 'DJ Shisha',
+    description: 'International DJ from Hungary. He is coming back to Helsinki for the 2nd time!',
+    image: DjShisha,
+    imageAlternative: DjShisha,
   },
 }
