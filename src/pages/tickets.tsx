@@ -34,13 +34,15 @@ export default function Tickets() {
               <li className="pb-2">🌟 Marco and Eleonora (2h)</li>
               <li className="pb-2">🌟 Hasan and Valerija (2h)</li>
               <li className="pb-2">🌟 Sorush and Elise (2h)</li>
-              <li className="pb-2">🌟 Kevin (1h)</li>
+              <li className="pb-2">🌟 Kevin and Jenna (1h)</li>
+              <li className="pb-2">🌟 Pinja (1h)</li>
+              <li className="pb-2">🌟 Sanna Lady Styling (1h)</li>
             </ul>
 
             <p className="font-semibold text-neutral-400">Party pass</p>
             <Body
               mobileLeft
-              text="Party pass will be available 1st of August at the price of 46€. It includes access to all parties and pre-party workshops."
+              text="Party pass will be available 1st of August at the price of 49€. It includes access to all parties and pre-party workshops."
             />
 
             <p className="font-semibold text-neutral-400">Single night pass</p>
@@ -86,15 +88,15 @@ export default function Tickets() {
 
           <PriceRow title="2nd Round Full Pass Follower" price={100}>
             <p className="text-neutral-500 text-sm">
-              <span>Only 3 left!</span>
-              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
+              {/* <span>Only 3 left!</span> */}
+              <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
           <PriceRow title="2nd Round Pass Leader" price={100}>
             <p className="text-neutral-500 text-sm">
-              <span>Only 10 left!</span>
-              {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
+              {/* <span>Only 10 left!</span> */}
+              <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
 
@@ -104,14 +106,15 @@ export default function Tickets() {
 
           <PriceRow title="3rd Round Pass Follower" price={110}>
             <p className="text-neutral-500 text-sm">
+              <span>Sales on hold until more leaders pass are sold</span>
               {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
           </PriceRow>
 
-          <PriceRow title="Party Pass" price={46}>
+          <PriceRow title="Party Pass" price={49}>
             <p className="text-neutral-500 text-sm">Access to friday, saturday and sunday parties</p>
             <p className="text-neutral-500 text-sm">
-              <span className="font-bold text-gray-500">Available soon!</span>
+              <span className="font-bold text-gray-500">Limited amount available!</span>
             </p>
           </PriceRow>
         </section>

@@ -96,9 +96,9 @@ const ArtistScrollview = ({ onClick }: ArtistScrollviewProps): JSX.Element => {
           type="right"
           onClick={() => {
             if (isMobile) {
-              if (scrollIndex < 6) setScrollIndex((prev) => prev + 1)
+              if (scrollIndex < 9) setScrollIndex((prev) => prev + 1)
             } else {
-              if (scrollIndex < 3) setScrollIndex((prev) => prev + 1)
+              if (scrollIndex < 6) setScrollIndex((prev) => prev + 1)
             }
           }}
         />
