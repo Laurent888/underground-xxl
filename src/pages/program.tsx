@@ -11,39 +11,50 @@ export default function Program() {
       <HeroImage title="Program" />
 
       <section className="container mt-12 mx-auto flex flex-col items-center md:items-start mb-12">
-        <h3 className="text-3xl font-bold italic mb-1 text-center mx-2 mb-10">PROGRAM DETAILS</h3>
+        <h3 className="text-3xl font-bold italic text-center mx-2 mb-10">PROGRAM DETAILS</h3>
 
         <div className="mb-12 px-2">
           <div className="pb-8 px-4">
             <p className="mb-2 text-2xl font-bold italic">Friday</p>
-            <div className="flex flex-row">
-              <p className="font-bold mr-2">20:30 - 22:30</p>
+            <p className="mb-2 text-sm text-zinc-400">Location: Balanssi Studio</p>
+            <div className="flex flex-row ">
+              <p className="font-bold mr-2">20:00 - 22:00</p>
               <p>Workshops</p>
             </div>
             <div className="flex flex-row">
-              <p className="font-bold mr-2">22:30 - 04:00</p>
-              <p>Social. Dresscode: Tropical 🌴</p>
+              <p className="font-bold mr-2">22:00 - 04:00</p>
+              <p>Social</p>
             </div>
 
             <p className="mb-2 text-2xl font-bold italic mt-4 ">Saturday</p>
+            <p className="mb-2 text-sm text-zinc-400">Location: Balanssi Studio and Teatteri Toivo</p>
             <div className="flex flex-row">
-              <p className="font-bold mr-2">11:00 - 17:30</p>
-              <p>Workshops</p>
+              <p className="font-bold mr-2">11:00 - 17:00</p>
+              <p>Regular workshops at Balanssi Studio</p>
             </div>
             <div className="flex flex-row">
-              <p className="font-bold mr-2">16:00 - 20:00</p>
-              <p>Outdoor bachata social at Annantalo A-lava (Kamppi metro)</p>
+              <p className="font-bold mr-2">14:00 - 17:00</p>
+              <p>Advanced workshops at Balanssi Studio</p>
+            </div>
+            <div className="flex flex-row mb-4">
+              <p className="font-bold mr-2">17:00 - 19:00</p>
+              <p>Day social at Teatteri Toivo</p>
             </div>
             <div className="flex flex-row">
-              <p className="font-bold mr-2">21:30 - 22:30</p>
+              <p className="font-bold mr-2">21:00 - 22:00</p>
               <p>Pre-party workshop</p>
             </div>
             <div className="flex flex-row">
-              <p className="font-bold mr-2">22:30 - 05:00</p>
-              <p>Social. Dresscode: Elegant 🤵‍♀️🤵🏽</p>
+              <p className="font-bold mr-2">22:00 - 05:00</p>
+              <p>Social</p>
+            </div>
+            <div className="flex flex-row">
+              <p className="font-bold mr-2">01:00 - 01:40</p>
+              <p>Bachata Battle Final</p>
             </div>
 
             <p className="mb-2 text-2xl font-bold italic mt-4 ">Sunday</p>
+            <p className="mb-2 text-sm text-zinc-400">Location: Balanssi Studio and Teatteri Toivo</p>
             <div className="flex flex-row">
               <p className="font-bold mr-2">13:00 - 18:30</p>
               <p>Workshops</p>
@@ -72,17 +83,10 @@ export default function Program() {
           </div>
 
           <p className="mb-2 mt-8">• Please bring an ID for the registration.</p>
-          <p className="mb-2">
-            • If you are registered for the masterclass, please bring cash for the payment (20 EUR)
-          </p>
           <p className="mb-2">• Single night party pass can be bought at the door. More info in the ticket page.</p>
           {/* <p className="mb-2">
             • There is lunch option for 9,5 EUR in the same building as the event on Saturday. Recommended!
           </p> */}
-          <p className="mb-2">
-            • ATTENTION! Sunday workshop and parties will be held in a different location. From 13 to 16 in Bongos
-            Studio and from 16:00 to 22:30 in Seaside Lounge.
-          </p>
         </div>
 
         <div className="items-center md:w-1/2">{/* <Image src={Schedule} alt="program" className="w-full" /> */}</div>
