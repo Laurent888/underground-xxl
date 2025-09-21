@@ -30,7 +30,7 @@ export default function Tickets() {
             <ul className="mb-4">
               <li className="pb-2">🌟 Miguel and Sunsire (3h)</li>
               <li className="pb-2">🌟 Jorge and Aroa (2h)</li>
-              <li className="pb-2">🌟 Alex and Alma (3h)</li>
+              <li className="pb-2">🌟 Alex and Alma (2h)</li>
               <li className="pb-2">🌟 Marco and Eleonora (2h)</li>
               <li className="pb-2">🌟 Hasan and Valerija (2h)</li>
               <li className="pb-2">🌟 Sorush and Elise (2h)</li>
@@ -50,6 +50,12 @@ export default function Tickets() {
               mobileLeft
               text="Single night pass are available at the door. Please note that we only accept cash or mobile pay. The prices are as follows:
               Friday 15€, Saturday 25€ and Sunday 15€. Pre-party workshop is included in the price."
+            />
+            <p className="font-semibold text-neutral-400">⚠️ Saturday party</p>
+            <Body
+              mobileLeft
+              text="We only sell late night saturday pass at a discounted price on WeDance app. Entrance is after 01:30
+              and party ends at 05:00. The reason for this is that the venue space is limited."
             />
 
             <p className="font-semibold text-neutral-400">Refund policy</p>
@@ -101,12 +107,15 @@ export default function Tickets() {
           </PriceRow>
 
           <PriceRow title="3rd Round Pass Leader" price={110}>
-            <p className="text-neutral-500 text-sm"></p>
+            {/* <p className="text-neutral-500 text-sm"></p> */}
+            <p className="text-neutral-500 text-sm">
+              <span className="font-bold text-red-500">SOLD OUT!</span>
+            </p>
           </PriceRow>
 
           <PriceRow title="3rd Round Pass Follower" price={110}>
             <p className="text-neutral-500 text-sm">
-              <span>Sales on hold until more leaders pass are sold</span>
+              <span>Only 3 left!</span>
               {/* <span className="font-bold text-red-500">SOLD OUT!</span> */}
             </p>
           </PriceRow>
@@ -114,7 +123,7 @@ export default function Tickets() {
           <PriceRow title="Party Pass" price={49}>
             <p className="text-neutral-500 text-sm">Access to friday, saturday and sunday parties</p>
             <p className="text-neutral-500 text-sm">
-              <span className="font-bold text-gray-500">Limited amount available!</span>
+              <span className="font-bold text-red-500">SOLD OUT!</span>
             </p>
           </PriceRow>
         </section>
